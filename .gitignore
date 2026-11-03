@@ -1,5 +1,15 @@
 node_modules/
 dist/
 .DS_Store
-
 .env.production
+.env.local
+/server/.env
+/uploads/
+.next/
+server/target/
+.svelte-kit/
+build/
+.playwright-mcp/
+test-results/
+playwright-report/
+e2e/node_modules/

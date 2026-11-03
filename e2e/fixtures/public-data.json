@@ -1,0 +1,32 @@
+{
+  "city": "南京市",
+  "source": "fixture",
+  "fetchedAt": "2026-01-01T00:00:00.000Z",
+  "pois": [
+    {
+      "id": "e2e-001",
+      "name": "测试温泉会所",
+      "adminCategory": "洗浴中心",
+      "adname": "玄武区",
+      "address": "测试路 1 号",
+      "location": "118.7969,32.0603",
+      "biz_ext": { "rating": "4.6", "rating_num": "128", "cost": "168", "open_time": "10:00-24:00" },
+      "type": "洗浴中心;温泉",
+      "business_area": "玄武区",
+      "photos": [],
+      "recommended": true
+    },
+    {
+      "id": "e2e-002",
+      "name": "测试足道馆",
+      "adminCategory": "足疗会所",
+      "adname": "秦淮区",
+      "address": "测试路 2 号",
+      "location": "118.8000,32.0450",
+      "biz_ext": { "rating": "4.2", "rating_num": "56", "cost": "108", "open_time": "11:00-23:00" },
+      "type": "足疗会所;足道",
+      "business_area": "秦淮区",
+      "photos": []
+    }
+  ]
+}

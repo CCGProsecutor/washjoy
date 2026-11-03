@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  rust:
+    name: Rust build & test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: server
+      - name: Build (release)
+        run: cargo build --release --locked
+      - name: Unit tests
+        run: cargo test --locked
+      - name: Clippy
+        run: cargo clippy --all-targets --locked
+
+  web:
+    name: Web build (SvelteKit)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Report build size
+        run: |
+          du -sh build
+          find build -type f | wc -l
+      - uses: actions/upload-artifact@v4
+        with:
+          name: washjoy-static-build
+          path: build
+          retention-days: 7
+
+  e2e:
+    name: Browser tests (Playwright)
+    runs-on: ubuntu-latest
+    needs: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Install e2e deps
+        run: npm ci --prefix e2e
+      - name: Install Chromium
+        run: npx --prefix e2e playwright install --with-deps chromium
+      - name: Run browser tests
+        run: npx --prefix e2e playwright test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-report
+          path: e2e/playwright-report
+          retention-days: 7

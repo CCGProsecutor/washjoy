@@ -1,0 +1,9 @@
+{
+  "name": "washjoy-e2e",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Playwright browser tests for the Washjoy static site",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
