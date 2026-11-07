@@ -1,0 +1,744 @@
+- generic [ref=f4e3]:
+  - banner [ref=f4e4]:
+    - link "W Washjoy 附近好好洗" [ref=f4e5] [cursor=pointer]:
+      - /url: /washjoy/
+      - generic [ref=f4e6]: W
+      - generic [ref=f4e7]:
+        - text: Washjoy
+        - generic [ref=f4e8]: 附近好好洗
+    - button "开启定位后推荐附近门店" [ref=f4e9] [cursor=pointer]
+    - link "账号" [ref=f4e13] [cursor=pointer]:
+      - /url: /washjoy/account
+  - main [ref=f4e17]:
+    - generic [ref=f4e18]:
+      - generic [ref=f4e19]: 此刻附近
+      - heading "想洗个舒服澡？" [level=1] [ref=f4e21]
+      - paragraph [ref=f4e22]: 30 分钟内，找到适合你的那一间
+    - searchbox "搜索附近门店" [ref=f4e27]
+    - generic [ref=f4e28]:
+      - generic [ref=f4e29]: 南京市
+      - button "筛选 · 30分钟" [ref=f4e33] [cursor=pointer]
+    - generic [ref=f4e37]:
+      - generic [ref=f4e38]:
+        - button "全部" [ref=f4e39] [cursor=pointer]
+        - button "洗浴中心" [ref=f4e40] [cursor=pointer]
+        - button "大众澡堂" [ref=f4e41] [cursor=pointer]
+        - button "足疗会所" [ref=f4e42] [cursor=pointer]
+        - button "街边店" [ref=f4e43] [cursor=pointer]
+        - button "私汤" [ref=f4e44] [cursor=pointer]
+      - generic [ref=f4e45]:
+        - button "公交地铁" [ref=f4e46] [cursor=pointer]
+        - button "骑行" [ref=f4e54] [cursor=pointer]
+        - button "驾车" [ref=f4e60] [cursor=pointer]
+    - region "门店位置地图" [ref=f4e64]:
+      - generic [ref=f4e65]:
+        - iframe [ref=f4e66]
+        - generic [ref=f4e68]:
+          - generic:
+            - generic "扬州足疗修脚推拿(北极西村步道店)" [ref=f4e71]:
+              - button "扬州足疗修脚推拿(北极西村步道店)" [ref=f4e72] [cursor=pointer]: 14分
+            - generic "凤都足疗(石婆婆巷小区店)" [ref=f4e73]:
+              - button "凤都足疗(石婆婆巷小区店)" [ref=f4e74] [cursor=pointer]: 17分
+            - generic "素极•SPA" [ref=f4e75]:
+              - button "素极•SPA" [ref=f4e76] [cursor=pointer]: 18分
+            - generic "陆琴脚艺(高楼门店)" [ref=f4e77]:
+              - button "陆琴脚艺(高楼门店)" [ref=f4e78] [cursor=pointer]: 18分
+            - generic "郑远元专业修脚房(南京丹凤街店)" [ref=f4e79]:
+              - button "郑远元专业修脚房(南京丹凤街店)" [ref=f4e80] [cursor=pointer]: 18分
+            - generic "足悦堂(高楼门厚载巷店)" [ref=f4e81]:
+              - button "足悦堂(高楼门厚载巷店)" [ref=f4e82] [cursor=pointer]: 19分
+            - generic "扬州足疗(花红园社区休闲苑店)" [ref=f4e83]:
+              - button "扬州足疗(花红园社区休闲苑店)" [ref=f4e84] [cursor=pointer]: 12分
+            - generic "扬州足疗(新街口政务大厦店)" [ref=f4e85]:
+              - button "扬州足疗(新街口政务大厦店)" [ref=f4e86] [cursor=pointer]: 12分
+            - generic "南野足浴疗愈馆" [ref=f4e87]:
+              - button "南野足浴疗愈馆" [ref=f4e88] [cursor=pointer]: 12分
+            - generic "足生堂(荷包套店)" [ref=f4e89]:
+              - button "足生堂(荷包套店)" [ref=f4e90] [cursor=pointer]: 12分
+            - generic "喜足足疗推拿" [ref=f4e91]:
+              - button "喜足足疗推拿" [ref=f4e92] [cursor=pointer]: 12分
+            - generic "润足足道(大纱帽巷40号小区店)" [ref=f4e93]:
+              - button "润足足道(大纱帽巷40号小区店)" [ref=f4e94] [cursor=pointer]: 12分
+            - generic "淮扬足道(居安里片区店)" [ref=f4e95]:
+              - button "淮扬足道(居安里片区店)" [ref=f4e96] [cursor=pointer]: 12分
+            - generic "足艺堂(居安里片区店)" [ref=f4e97]:
+              - button "足艺堂(居安里片区店)" [ref=f4e98] [cursor=pointer]: 12分
+            - generic "邦怡汗蒸(同仁新寓店)" [ref=f4e99]:
+              - button "邦怡汗蒸(同仁新寓店)" [ref=f4e100] [cursor=pointer]: 13分
+            - generic "四季沐足(银鸿商务中心A座店)" [ref=f4e101]:
+              - button "四季沐足(银鸿商务中心A座店)" [ref=f4e102] [cursor=pointer]: 13分
+            - generic "云栖SPA会所(珠江路店)" [ref=f4e103]:
+              - button "云栖SPA会所(珠江路店)" [ref=f4e104] [cursor=pointer]: 13分
+            - generic "隆泰堂专业足疗按摩推拿汗蒸SPA(丹凤街店)" [ref=f4e105]:
+              - button "隆泰堂专业足疗按摩推拿汗蒸SPA(丹凤街店)" [ref=f4e106] [cursor=pointer]: 13分
+            - generic "扬州足疗修脚" [ref=f4e107]:
+              - button "扬州足疗修脚" [ref=f4e108] [cursor=pointer]: 13分
+            - generic "花筑·南京几家碳酸温泉民宿(南京总统府浮桥地铁站店)" [ref=f4e109]:
+              - button "花筑·南京几家碳酸温泉民宿(南京总统府浮桥地铁站店)" [ref=f4e110] [cursor=pointer]: 13分
+            - generic "大汉足道·影院式足疗按摩SPA(珠江路店)" [ref=f4e111]:
+              - button "大汉足道·影院式足疗按摩SPA(珠江路店)" [ref=f4e112] [cursor=pointer]: 13分
+            - generic "靓足湾足疗" [ref=f4e113]:
+              - button "靓足湾足疗" [ref=f4e114] [cursor=pointer]: 13分
+            - generic "清松汤泉浴室" [ref=f4e115]:
+              - button "清松汤泉浴室" [ref=f4e116] [cursor=pointer]: 13分
+            - generic "郑远元专业修脚房(珠江路店)" [ref=f4e117]:
+              - button "郑远元专业修脚房(珠江路店)" [ref=f4e118] [cursor=pointer]: 13分
+            - generic "妙手初心盲人推拿按摩" [ref=f4e119]:
+              - button "妙手初心盲人推拿按摩" [ref=f4e120] [cursor=pointer]: 13分
+            - generic "扬州涌泉足道(如意里店)" [ref=f4e121]:
+              - button "扬州涌泉足道(如意里店)" [ref=f4e122] [cursor=pointer]: 13分
+            - generic "足林水岸" [ref=f4e123]:
+              - button "足林水岸" [ref=f4e124] [cursor=pointer]: 13分
+            - generic "悦榕庄沐愈情景SPA会所" [ref=f4e125]:
+              - button "悦榕庄沐愈情景SPA会所" [ref=f4e126] [cursor=pointer]: 13分
+            - generic "郑远元专业修脚房(洪武路店)" [ref=f4e127]:
+              - button "郑远元专业修脚房(洪武路店)" [ref=f4e128] [cursor=pointer]: 14分
+            - generic "泰谷里·影院足道(太平门店)" [ref=f4e129]:
+              - button "泰谷里·影院足道(太平门店)" [ref=f4e130] [cursor=pointer]: 14分
+      - button "重新定位" [ref=f4e136] [cursor=pointer]
+      - generic [ref=f4e140]: 南京市 · 已加载 30 家
+    - generic [ref=f4e142]:
+      - generic [ref=f4e143]:
+        - heading "附近推荐" [level=2] [ref=f4e144]
+        - generic [ref=f4e145]: 30 / 322 家已加载
+      - button "站长推荐" [ref=f4e146] [cursor=pointer]
+    - generic [ref=f4e149]: 公交地铁 · 预计 30 分钟 内
+    - generic [ref=f4e150]:
+      - article [ref=f4e151] [cursor=pointer]:
+        - button "查看扬州足疗修脚推拿(北极西村步道店)详情" [ref=f4e152]:
+          - img "扬州足疗修脚推拿(北极西村步道店)" [ref=f4e153]
+          - generic [ref=f4e154]: 分类示意图
+        - generic [ref=f4e155]:
+          - generic [ref=f4e156]:
+            - generic [ref=f4e157]:
+              - generic [ref=f4e158]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e159]:
+                - link "扬州足疗修脚推拿(北极西村步道店)" [ref=f4e160]:
+                  - /url: /washjoy/?place=B0G0O1WMBN&city=nanjing
+            - button "收藏" [ref=f4e161]
+          - generic [ref=f4e163]:
+            - generic [ref=f4e165]: "3.4"
+            - generic [ref=f4e166]: 暂无评价数据
+          - generic [ref=f4e167]: 生活服务
+          - generic [ref=f4e169]:
+            - generic [ref=f4e170]: ¥65 起 / 人
+            - link "导航到扬州足疗修脚推拿(北极西村步道店)" [ref=f4e171]:
+              - /url: https://uri.amap.com/navigation?to=118.788475,32.060925,%E6%89%AC%E5%B7%9E%E8%B6%B3%E7%96%97%E4%BF%AE%E8%84%9A%E6%8E%A8%E6%8B%BF(%E5%8C%97%E6%9E%81%E8%A5%BF%E6%9D%91%E6%AD%A5%E9%81%93%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e172]: 797 米 · 14 分钟
+      - article [ref=f4e174] [cursor=pointer]:
+        - button "查看凤都足疗(石婆婆巷小区店)详情" [ref=f4e175]:
+          - img "凤都足疗(石婆婆巷小区店)" [ref=f4e176]
+          - generic [ref=f4e177]: 门店图片
+        - generic [ref=f4e178]:
+          - generic [ref=f4e179]:
+            - generic [ref=f4e180]:
+              - generic [ref=f4e181]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e182]:
+                - link "凤都足疗(石婆婆巷小区店)" [ref=f4e183]:
+                  - /url: /washjoy/?place=B0FFF90GEW&city=nanjing
+            - button "收藏" [ref=f4e184]
+          - generic [ref=f4e186]:
+            - generic [ref=f4e188]: "3.8"
+            - generic [ref=f4e189]: 暂无评价数据
+          - generic [ref=f4e190]: 生活服务
+          - generic [ref=f4e192]:
+            - generic [ref=f4e193]: ¥48 起 / 人
+            - link "导航到凤都足疗(石婆婆巷小区店)" [ref=f4e194]:
+              - /url: https://uri.amap.com/navigation?to=118.787715,32.056552,%E5%87%A4%E9%83%BD%E8%B6%B3%E7%96%97(%E7%9F%B3%E5%A9%86%E5%A9%86%E5%B7%B7%E5%B0%8F%E5%8C%BA%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e195]: 961 米 · 17 分钟
+      - article [ref=f4e197] [cursor=pointer]:
+        - button "查看素极•SPA详情" [ref=f4e198]:
+          - img "素极•SPA" [ref=f4e199]
+          - generic [ref=f4e200]: 分类示意图
+        - generic [ref=f4e201]:
+          - generic [ref=f4e202]:
+            - generic [ref=f4e203]:
+              - generic [ref=f4e204]: 洗浴中心 · 玄武区
+              - heading [level=3] [ref=f4e205]:
+                - link "素极•SPA" [ref=f4e206]:
+                  - /url: /washjoy/?place=B0L0GS34YJ&city=nanjing
+            - button "收藏" [ref=f4e207]
+          - generic [ref=f4e209]:
+            - generic [ref=f4e211]: "4.4"
+            - generic [ref=f4e212]: 暂无评价数据
+          - generic [ref=f4e213]: 生活服务
+          - generic [ref=f4e215]:
+            - generic [ref=f4e216]: ¥208 起 / 人
+            - link "导航到素极•SPA" [ref=f4e217]:
+              - /url: https://uri.amap.com/navigation?to=118.78661,32.063066,%E7%B4%A0%E6%9E%81%E2%80%A2SPA&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e218]: 1.0 公里 · 18 分钟
+      - article [ref=f4e220] [cursor=pointer]:
+        - button "查看陆琴脚艺(高楼门店)详情" [ref=f4e221]:
+          - img "陆琴脚艺(高楼门店)" [ref=f4e222]
+          - generic [ref=f4e223]: 门店图片
+        - generic [ref=f4e224]:
+          - generic [ref=f4e225]:
+            - generic [ref=f4e226]:
+              - generic [ref=f4e227]: 洗浴中心 · 玄武区
+              - heading [level=3] [ref=f4e228]:
+                - link "陆琴脚艺(高楼门店)" [ref=f4e229]:
+                  - /url: /washjoy/?place=B0LKCU11JH&city=nanjing
+            - button "收藏" [ref=f4e230]
+          - generic [ref=f4e232]:
+            - generic [ref=f4e234]: "4.6"
+            - generic [ref=f4e235]: 暂无评价数据
+          - generic [ref=f4e236]: 生活服务
+          - generic [ref=f4e238]:
+            - generic [ref=f4e239]: ¥127 起 / 人
+            - link "导航到陆琴脚艺(高楼门店)" [ref=f4e240]:
+              - /url: https://uri.amap.com/navigation?to=118.786145,32.062416,%E9%99%86%E7%90%B4%E8%84%9A%E8%89%BA(%E9%AB%98%E6%A5%BC%E9%97%A8%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e241]: 1.0 公里 · 18 分钟
+      - article [ref=f4e243] [cursor=pointer]:
+        - button "查看郑远元专业修脚房(南京丹凤街店)详情" [ref=f4e244]:
+          - img "郑远元专业修脚房(南京丹凤街店)" [ref=f4e245]
+          - generic [ref=f4e246]: 门店图片
+        - generic [ref=f4e247]:
+          - generic [ref=f4e248]:
+            - generic [ref=f4e249]:
+              - generic [ref=f4e250]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e251]:
+                - link "郑远元专业修脚房(南京丹凤街店)" [ref=f4e252]:
+                  - /url: /washjoy/?place=B0FFIPCSVY&city=nanjing
+            - button "收藏" [ref=f4e253]
+          - generic [ref=f4e255]:
+            - generic [ref=f4e257]: "4.6"
+            - generic [ref=f4e258]: 暂无评价数据
+          - generic [ref=f4e259]: 生活服务
+          - generic [ref=f4e261]:
+            - generic [ref=f4e262]: ¥84 起 / 人
+            - link "导航到郑远元专业修脚房(南京丹凤街店)" [ref=f4e263]:
+              - /url: https://uri.amap.com/navigation?to=118.787346,32.055536,%E9%83%91%E8%BF%9C%E5%85%83%E4%B8%93%E4%B8%9A%E4%BF%AE%E8%84%9A%E6%88%BF(%E5%8D%97%E4%BA%AC%E4%B8%B9%E5%87%A4%E8%A1%97%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e264]: 1.0 公里 · 18 分钟
+      - article [ref=f4e266] [cursor=pointer]:
+        - button "查看足悦堂(高楼门厚载巷店)详情" [ref=f4e267]:
+          - img "足悦堂(高楼门厚载巷店)" [ref=f4e268]
+          - generic [ref=f4e269]: 门店图片
+        - generic [ref=f4e270]:
+          - generic [ref=f4e271]:
+            - generic [ref=f4e272]:
+              - generic [ref=f4e273]: 洗浴中心 · 玄武区
+              - heading [level=3] [ref=f4e274]:
+                - link "足悦堂(高楼门厚载巷店)" [ref=f4e275]:
+                  - /url: /washjoy/?place=B0FFI9PBZ9&city=nanjing
+            - button "收藏" [ref=f4e276]
+          - generic [ref=f4e278]:
+            - generic [ref=f4e280]: "4.1"
+            - generic [ref=f4e281]: 暂无评价数据
+          - generic [ref=f4e282]: 生活服务
+          - generic [ref=f4e284]:
+            - generic [ref=f4e285]: ¥70 起 / 人
+            - link "导航到足悦堂(高楼门厚载巷店)" [ref=f4e286]:
+              - /url: https://uri.amap.com/navigation?to=118.785964,32.062834,%E8%B6%B3%E6%82%A6%E5%A0%82(%E9%AB%98%E6%A5%BC%E9%97%A8%E5%8E%9A%E8%BD%BD%E5%B7%B7%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e287]: 1.1 公里 · 19 分钟
+      - article [ref=f4e289] [cursor=pointer]:
+        - button "查看扬州足疗(花红园社区休闲苑店)详情" [ref=f4e290]:
+          - img "扬州足疗(花红园社区休闲苑店)" [ref=f4e291]
+          - generic [ref=f4e292]: 分类示意图
+        - generic [ref=f4e293]:
+          - generic [ref=f4e294]:
+            - generic [ref=f4e295]:
+              - generic [ref=f4e296]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e297]:
+                - link "扬州足疗(花红园社区休闲苑店)" [ref=f4e298]:
+                  - /url: /washjoy/?place=B0GUJ1TT5I&city=nanjing
+            - button "收藏" [ref=f4e299]
+          - generic [ref=f4e301]:
+            - generic [ref=f4e303]: "3.4"
+            - generic [ref=f4e304]: 暂无评价数据
+          - generic [ref=f4e305]: 生活服务
+          - generic [ref=f4e307]:
+            - generic [ref=f4e308]: ¥84 起 / 人
+            - link "导航到扬州足疗(花红园社区休闲苑店)" [ref=f4e309]:
+              - /url: https://uri.amap.com/navigation?to=118.799413,32.05014,%E6%89%AC%E5%B7%9E%E8%B6%B3%E7%96%97(%E8%8A%B1%E7%BA%A2%E5%9B%AD%E7%A4%BE%E5%8C%BA%E4%BC%91%E9%97%B2%E8%8B%91%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e310]: 1.2 公里 · 12 分钟
+      - article [ref=f4e312] [cursor=pointer]:
+        - button "查看扬州足疗(新街口政务大厦店)详情" [ref=f4e313]:
+          - img "扬州足疗(新街口政务大厦店)" [ref=f4e314]
+          - generic [ref=f4e315]: 门店图片
+        - generic [ref=f4e316]:
+          - generic [ref=f4e317]:
+            - generic [ref=f4e318]:
+              - generic [ref=f4e319]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e320]:
+                - link "扬州足疗(新街口政务大厦店)" [ref=f4e321]:
+                  - /url: /washjoy/?place=B001911MPE&city=nanjing
+            - button "收藏" [ref=f4e322]
+          - generic [ref=f4e324]:
+            - generic [ref=f4e326]: "3.5"
+            - generic [ref=f4e327]: 暂无评价数据
+          - generic [ref=f4e328]: 生活服务
+          - generic [ref=f4e330]:
+            - generic [ref=f4e331]: ¥74 起 / 人
+            - link "导航到扬州足疗(新街口政务大厦店)" [ref=f4e332]:
+              - /url: https://uri.amap.com/navigation?to=118.786276,32.055049,%E6%89%AC%E5%B7%9E%E8%B6%B3%E7%96%97(%E6%96%B0%E8%A1%97%E5%8F%A3%E6%94%BF%E5%8A%A1%E5%A4%A7%E5%8E%A6%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e333]: 1.2 公里 · 12 分钟
+      - article [ref=f4e335] [cursor=pointer]:
+        - button "查看南野足浴疗愈馆详情" [ref=f4e336]:
+          - img "南野足浴疗愈馆" [ref=f4e337]
+          - generic [ref=f4e338]: 门店图片
+        - generic [ref=f4e339]:
+          - generic [ref=f4e340]:
+            - generic [ref=f4e341]:
+              - generic [ref=f4e342]: 足疗会所 · 玄武区
+              - heading [level=3] [ref=f4e343]:
+                - link "南野足浴疗愈馆" [ref=f4e344]:
+                  - /url: /washjoy/?place=B0MR6L15TI&city=nanjing
+            - button "收藏" [ref=f4e345]
+          - generic [ref=f4e347]:
+            - generic [ref=f4e349]: "3.8"
+            - generic [ref=f4e350]: 暂无评价数据
+          - generic [ref=f4e351]: 生活服务
+          - generic [ref=f4e353]:
+            - generic [ref=f4e354]: ¥330 起 / 人
+            - link "导航到南野足浴疗愈馆" [ref=f4e355]:
+              - /url: https://uri.amap.com/navigation?to=118.795671,32.049856,%E5%8D%97%E9%87%8E%E8%B6%B3%E6%B5%B4%E7%96%97%E6%84%88%E9%A6%86&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e356]: 1.2 公里 · 12 分钟
+      - article [ref=f4e358] [cursor=pointer]:
+        - button "查看足生堂(荷包套店)详情" [ref=f4e359]:
+          - img "足生堂(荷包套店)" [ref=f4e360]
+          - generic [ref=f4e361]: 分类示意图
+        - generic [ref=f4e362]:
+          - generic [ref=f4e363]:
+            - generic [ref=f4e364]:
+              - generic [ref=f4e365]: 洗浴中心 · 玄武区
+              - heading [level=3] [ref=f4e366]:
+                - link "足生堂(荷包套店)" [ref=f4e367]:
+                  - /url: /washjoy/?place=B0FFJ4SQG7&city=nanjing
+            - button "收藏" [ref=f4e368]
+          - generic [ref=f4e370]:
+            - generic [ref=f4e372]: "4.2"
+            - generic [ref=f4e373]: 暂无评价数据
+          - generic [ref=f4e374]: 生活服务
+          - generic [ref=f4e376]:
+            - generic [ref=f4e377]: ¥101 起 / 人
+            - link "导航到足生堂(荷包套店)" [ref=f4e378]:
+              - /url: https://uri.amap.com/navigation?to=118.806085,32.05273,%E8%B6%B3%E7%94%9F%E5%A0%82(%E8%8D%B7%E5%8C%85%E5%A5%97%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e379]: 1.2 公里 · 12 分钟
+      - article [ref=f4e381] [cursor=pointer]:
+        - button "查看喜足足疗推拿详情" [ref=f4e382]:
+          - img "喜足足疗推拿" [ref=f4e383]
+          - generic [ref=f4e384]: 分类示意图
+        - generic [ref=f4e385]:
+          - generic [ref=f4e386]:
+            - generic [ref=f4e387]:
+              - generic [ref=f4e388]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e389]:
+                - link "喜足足疗推拿" [ref=f4e390]:
+                  - /url: /washjoy/?place=B0LU29RYAT&city=nanjing
+            - button "收藏" [ref=f4e391]
+          - generic [ref=f4e393]:
+            - generic [ref=f4e395]: "3.5"
+            - generic [ref=f4e396]: 暂无评价数据
+          - generic [ref=f4e397]: 生活服务
+          - generic [ref=f4e399]:
+            - generic [ref=f4e400]: ¥54 起 / 人
+            - link "导航到喜足足疗推拿" [ref=f4e401]:
+              - /url: https://uri.amap.com/navigation?to=118.792975,32.049825,%E5%96%9C%E8%B6%B3%E8%B6%B3%E7%96%97%E6%8E%A8%E6%8B%BF&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e402]: 1.2 公里 · 12 分钟
+      - article [ref=f4e404] [cursor=pointer]:
+        - button "查看润足足道(大纱帽巷40号小区店)详情" [ref=f4e405]:
+          - img "润足足道(大纱帽巷40号小区店)" [ref=f4e406]
+          - generic [ref=f4e407]: 门店图片
+        - generic [ref=f4e408]:
+          - generic [ref=f4e409]:
+            - generic [ref=f4e410]:
+              - generic [ref=f4e411]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e412]:
+                - link "润足足道(大纱帽巷40号小区店)" [ref=f4e413]:
+                  - /url: /washjoy/?place=B0FFF8PJNQ&city=nanjing
+            - button "收藏" [ref=f4e414]
+          - generic [ref=f4e416]:
+            - generic [ref=f4e418]: "3.9"
+            - generic [ref=f4e419]: 暂无评价数据
+          - generic [ref=f4e420]: 生活服务
+          - generic [ref=f4e422]:
+            - generic [ref=f4e423]: 价格请咨询门店
+            - link "导航到润足足道(大纱帽巷40号小区店)" [ref=f4e424]:
+              - /url: https://uri.amap.com/navigation?to=118.791753,32.050199,%E6%B6%A6%E8%B6%B3%E8%B6%B3%E9%81%93(%E5%A4%A7%E7%BA%B1%E5%B8%BD%E5%B7%B740%E5%8F%B7%E5%B0%8F%E5%8C%BA%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e425]: 1.2 公里 · 12 分钟
+      - article [ref=f4e427] [cursor=pointer]:
+        - button "查看淮扬足道(居安里片区店)详情" [ref=f4e428]:
+          - img "淮扬足道(居安里片区店)" [ref=f4e429]
+          - generic [ref=f4e430]: 门店图片
+        - generic [ref=f4e431]:
+          - generic [ref=f4e432]:
+            - generic [ref=f4e433]:
+              - generic [ref=f4e434]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e435]:
+                - link "淮扬足道(居安里片区店)" [ref=f4e436]:
+                  - /url: /washjoy/?place=B0FFMCL7CW&city=nanjing
+            - button "收藏" [ref=f4e437]
+          - generic [ref=f4e439]:
+            - generic [ref=f4e441]: "3.5"
+            - generic [ref=f4e442]: 暂无评价数据
+          - generic [ref=f4e443]: 生活服务
+          - generic [ref=f4e445]:
+            - generic [ref=f4e446]: ¥95 起 / 人
+            - link "导航到淮扬足道(居安里片区店)" [ref=f4e447]:
+              - /url: https://uri.amap.com/navigation?to=118.789664,32.051099,%E6%B7%AE%E6%89%AC%E8%B6%B3%E9%81%93(%E5%B1%85%E5%AE%89%E9%87%8C%E7%89%87%E5%8C%BA%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e448]: 1.2 公里 · 12 分钟
+      - article [ref=f4e450] [cursor=pointer]:
+        - button "查看足艺堂(居安里片区店)详情" [ref=f4e451]:
+          - img "足艺堂(居安里片区店)" [ref=f4e452]
+          - generic [ref=f4e453]: 分类示意图
+        - generic [ref=f4e454]:
+          - generic [ref=f4e455]:
+            - generic [ref=f4e456]:
+              - generic [ref=f4e457]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e458]:
+                - link "足艺堂(居安里片区店)" [ref=f4e459]:
+                  - /url: /washjoy/?place=B0FFF90HNU&city=nanjing
+            - button "收藏" [ref=f4e460]
+          - generic [ref=f4e462]:
+            - generic [ref=f4e464]: "3.7"
+            - generic [ref=f4e465]: 暂无评价数据
+          - generic [ref=f4e466]: 生活服务
+          - generic [ref=f4e468]:
+            - generic [ref=f4e469]: ¥69 起 / 人
+            - link "导航到足艺堂(居安里片区店)" [ref=f4e470]:
+              - /url: https://uri.amap.com/navigation?to=118.789589,32.050708,%E8%B6%B3%E8%89%BA%E5%A0%82(%E5%B1%85%E5%AE%89%E9%87%8C%E7%89%87%E5%8C%BA%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e471]: 1.3 公里 · 12 分钟
+      - article [ref=f4e473] [cursor=pointer]:
+        - button "查看邦怡汗蒸(同仁新寓店)详情" [ref=f4e474]:
+          - img "邦怡汗蒸(同仁新寓店)" [ref=f4e475]
+          - generic [ref=f4e476]: 分类示意图
+        - generic [ref=f4e477]:
+          - generic [ref=f4e478]:
+            - generic [ref=f4e479]:
+              - generic [ref=f4e480]: 洗浴中心 · 玄武区
+              - heading [level=3] [ref=f4e481]:
+                - link "邦怡汗蒸(同仁新寓店)" [ref=f4e482]:
+                  - /url: /washjoy/?place=B0J0F4OTGW&city=nanjing
+            - button "收藏" [ref=f4e483]
+          - generic [ref=f4e485]:
+            - generic [ref=f4e487]: "3"
+            - generic [ref=f4e488]: 暂无评价数据
+          - generic [ref=f4e489]: 生活服务
+          - generic [ref=f4e491]:
+            - generic [ref=f4e492]: ¥132 起 / 人
+            - link "导航到邦怡汗蒸(同仁新寓店)" [ref=f4e493]:
+              - /url: https://uri.amap.com/navigation?to=118.786975,32.051925,%E9%82%A6%E6%80%A1%E6%B1%97%E8%92%B8(%E5%90%8C%E4%BB%81%E6%96%B0%E5%AF%93%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e494]: 1.3 公里 · 13 分钟
+      - article [ref=f4e496] [cursor=pointer]:
+        - button "查看四季沐足(银鸿商务中心A座店)详情" [ref=f4e497]:
+          - img "四季沐足(银鸿商务中心A座店)" [ref=f4e498]
+          - generic [ref=f4e499]: 分类示意图
+        - generic [ref=f4e500]:
+          - generic [ref=f4e501]:
+            - generic [ref=f4e502]:
+              - generic [ref=f4e503]: 洗浴中心 · 玄武区
+              - heading [level=3] [ref=f4e504]:
+                - link "四季沐足(银鸿商务中心A座店)" [ref=f4e505]:
+                  - /url: /washjoy/?place=B0J10ZD3JS&city=nanjing
+            - button "收藏" [ref=f4e506]
+          - generic [ref=f4e508]:
+            - generic [ref=f4e510]: "4.5"
+            - generic [ref=f4e511]: 暂无评价数据
+          - generic [ref=f4e512]: 生活服务
+          - generic [ref=f4e514]:
+            - generic [ref=f4e515]: ¥143 起 / 人
+            - link "导航到四季沐足(银鸿商务中心A座店)" [ref=f4e516]:
+              - /url: https://uri.amap.com/navigation?to=118.79437,32.048616,%E5%9B%9B%E5%AD%A3%E6%B2%90%E8%B6%B3(%E9%93%B6%E9%B8%BF%E5%95%86%E5%8A%A1%E4%B8%AD%E5%BF%83A%E5%BA%A7%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e517]: 1.3 公里 · 13 分钟
+      - article [ref=f4e519] [cursor=pointer]:
+        - button "查看云栖SPA会所(珠江路店)详情" [ref=f4e520]:
+          - img "云栖SPA会所(珠江路店)" [ref=f4e521]
+          - generic [ref=f4e522]: 门店图片
+        - generic [ref=f4e523]:
+          - generic [ref=f4e524]:
+            - generic [ref=f4e525]:
+              - generic [ref=f4e526]: 洗浴中心 · 玄武区
+              - heading [level=3] [ref=f4e527]:
+                - link "云栖SPA会所(珠江路店)" [ref=f4e528]:
+                  - /url: /washjoy/?place=B0LAG5TAGF&city=nanjing
+            - button "收藏" [ref=f4e529]
+          - generic [ref=f4e531]:
+            - generic [ref=f4e533]: "4.3"
+            - generic [ref=f4e534]: 暂无评价数据
+          - generic [ref=f4e535]: 生活服务
+          - generic [ref=f4e537]:
+            - generic [ref=f4e538]: ¥409 起 / 人
+            - link "导航到云栖SPA会所(珠江路店)" [ref=f4e539]:
+              - /url: https://uri.amap.com/navigation?to=118.786825,32.052025,%E4%BA%91%E6%A0%96SPA%E4%BC%9A%E6%89%80(%E7%8F%A0%E6%B1%9F%E8%B7%AF%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e540]: 1.3 公里 · 13 分钟
+      - article [ref=f4e542] [cursor=pointer]:
+        - button "查看隆泰堂专业足疗按摩推拿汗蒸SPA(丹凤街店)详情" [ref=f4e543]:
+          - img "隆泰堂专业足疗按摩推拿汗蒸SPA(丹凤街店)" [ref=f4e544]
+          - generic [ref=f4e545]: 门店图片
+        - generic [ref=f4e546]:
+          - generic [ref=f4e547]:
+            - generic [ref=f4e548]:
+              - generic [ref=f4e549]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e550]:
+                - link "隆泰堂专业足疗按摩推拿汗蒸SPA(丹凤街店)" [ref=f4e551]:
+                  - /url: /washjoy/?place=B001909HCB&city=nanjing
+            - button "收藏" [ref=f4e552]
+          - generic [ref=f4e554]:
+            - generic [ref=f4e556]: "4.6"
+            - generic [ref=f4e557]: 暂无评价数据
+          - generic [ref=f4e558]: 生活服务
+          - generic [ref=f4e560]:
+            - generic [ref=f4e561]: ¥96 起 / 人
+            - link "导航到隆泰堂专业足疗按摩推拿汗蒸SPA(丹凤街店)" [ref=f4e562]:
+              - /url: https://uri.amap.com/navigation?to=118.78707,32.051744,%E9%9A%86%E6%B3%B0%E5%A0%82%E4%B8%93%E4%B8%9A%E8%B6%B3%E7%96%97%E6%8C%89%E6%91%A9%E6%8E%A8%E6%8B%BF%E6%B1%97%E8%92%B8SPA(%E4%B8%B9%E5%87%A4%E8%A1%97%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e563]: 1.3 公里 · 13 分钟
+      - article [ref=f4e565] [cursor=pointer]:
+        - button "查看扬州足疗修脚详情" [ref=f4e566]:
+          - img "扬州足疗修脚" [ref=f4e567]
+          - generic [ref=f4e568]: 分类示意图
+        - generic [ref=f4e569]:
+          - generic [ref=f4e570]:
+            - generic [ref=f4e571]:
+              - generic [ref=f4e572]: 街边店 · 鼓楼区
+              - heading [level=3] [ref=f4e573]:
+                - link "扬州足疗修脚" [ref=f4e574]:
+                  - /url: /washjoy/?place=B0FFF90O49&city=nanjing
+            - button "收藏" [ref=f4e575]
+          - generic [ref=f4e577]:
+            - generic [ref=f4e579]: "3.6"
+            - generic [ref=f4e580]: 暂无评价数据
+          - generic [ref=f4e581]: 生活服务
+          - generic [ref=f4e583]:
+            - generic [ref=f4e584]: ¥80 起 / 人
+            - link "导航到扬州足疗修脚" [ref=f4e585]:
+              - /url: https://uri.amap.com/navigation?to=118.782842,32.061672,%E6%89%AC%E5%B7%9E%E8%B6%B3%E7%96%97%E4%BF%AE%E8%84%9A&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e586]: 1.3 公里 · 13 分钟
+      - article [ref=f4e588] [cursor=pointer]:
+        - button "查看花筑·南京几家碳酸温泉民宿(南京总统府浮桥地铁站店)详情" [ref=f4e589]:
+          - img "花筑·南京几家碳酸温泉民宿(南京总统府浮桥地铁站店)" [ref=f4e590]
+          - generic [ref=f4e591]: 门店图片
+        - generic [ref=f4e592]:
+          - generic [ref=f4e593]:
+            - generic [ref=f4e594]:
+              - generic [ref=f4e595]: 私汤 · 玄武区
+              - heading [level=3] [ref=f4e596]:
+                - link "花筑·南京几家碳酸温泉民宿(南京总统府浮桥地铁站店)" [ref=f4e597]:
+                  - /url: /washjoy/?place=B0HKLHSN5L&city=nanjing
+            - button "收藏" [ref=f4e598]
+          - generic [ref=f4e600]:
+            - generic [ref=f4e602]: "4.4"
+            - generic [ref=f4e603]: 暂无评价数据
+          - generic [ref=f4e604]: 住宿服务
+          - generic [ref=f4e606]:
+            - generic [ref=f4e607]: 价格请咨询门店
+            - link "导航到花筑·南京几家碳酸温泉民宿(南京总统府浮桥地铁站店)" [ref=f4e608]:
+              - /url: https://uri.amap.com/navigation?to=118.800687,32.04819,%E8%8A%B1%E7%AD%91%C2%B7%E5%8D%97%E4%BA%AC%E5%87%A0%E5%AE%B6%E7%A2%B3%E9%85%B8%E6%B8%A9%E6%B3%89%E6%B0%91%E5%AE%BF(%E5%8D%97%E4%BA%AC%E6%80%BB%E7%BB%9F%E5%BA%9C%E6%B5%AE%E6%A1%A5%E5%9C%B0%E9%93%81%E7%AB%99%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e609]: 1.4 公里 · 13 分钟
+      - article [ref=f4e611] [cursor=pointer]:
+        - button "查看大汉足道·影院式足疗按摩SPA(珠江路店)详情" [ref=f4e612]:
+          - img "大汉足道·影院式足疗按摩SPA(珠江路店)" [ref=f4e613]
+          - generic [ref=f4e614]: 分类示意图
+        - generic [ref=f4e615]:
+          - generic [ref=f4e616]:
+            - generic [ref=f4e617]:
+              - generic [ref=f4e618]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e619]:
+                - link "大汉足道·影院式足疗按摩SPA(珠江路店)" [ref=f4e620]:
+                  - /url: /washjoy/?place=B0J35DX0LP&city=nanjing
+            - button "收藏" [ref=f4e621]
+          - generic [ref=f4e623]:
+            - generic [ref=f4e625]: "4.5"
+            - generic [ref=f4e626]: 暂无评价数据
+          - generic [ref=f4e627]: 生活服务
+          - generic [ref=f4e629]:
+            - generic [ref=f4e630]: ¥109 起 / 人
+            - link "导航到大汉足道·影院式足疗按摩SPA(珠江路店)" [ref=f4e631]:
+              - /url: https://uri.amap.com/navigation?to=118.786975,32.050531,%E5%A4%A7%E6%B1%89%E8%B6%B3%E9%81%93%C2%B7%E5%BD%B1%E9%99%A2%E5%BC%8F%E8%B6%B3%E7%96%97%E6%8C%89%E6%91%A9SPA(%E7%8F%A0%E6%B1%9F%E8%B7%AF%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e632]: 1.4 公里 · 13 分钟
+      - article [ref=f4e634] [cursor=pointer]:
+        - button "查看靓足湾足疗详情" [ref=f4e635]:
+          - img "靓足湾足疗" [ref=f4e636]
+          - generic [ref=f4e637]: 门店图片
+        - generic [ref=f4e638]:
+          - generic [ref=f4e639]:
+            - generic [ref=f4e640]:
+              - generic [ref=f4e641]: 街边店 · 鼓楼区
+              - heading [level=3] [ref=f4e642]:
+                - link "靓足湾足疗" [ref=f4e643]:
+                  - /url: /washjoy/?place=B0FFF90O26&city=nanjing
+            - button "收藏" [ref=f4e644]
+          - generic [ref=f4e646]:
+            - generic [ref=f4e648]: "3.9"
+            - generic [ref=f4e649]: 暂无评价数据
+          - generic [ref=f4e650]: 生活服务
+          - generic [ref=f4e652]:
+            - generic [ref=f4e653]: ¥71 起 / 人
+            - link "导航到靓足湾足疗" [ref=f4e654]:
+              - /url: https://uri.amap.com/navigation?to=118.781744,32.062398,%E9%9D%93%E8%B6%B3%E6%B9%BE%E8%B6%B3%E7%96%97&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e655]: 1.4 公里 · 13 分钟
+      - article [ref=f4e657] [cursor=pointer]:
+        - button "查看清松汤泉浴室详情" [ref=f4e658]:
+          - img "清松汤泉浴室" [ref=f4e659]
+          - generic [ref=f4e660]: 分类示意图
+        - generic [ref=f4e661]:
+          - generic [ref=f4e662]:
+            - generic [ref=f4e663]:
+              - generic [ref=f4e664]: 大众澡堂 · 玄武区
+              - heading [level=3] [ref=f4e665]:
+                - link "清松汤泉浴室" [ref=f4e666]:
+                  - /url: /washjoy/?place=B0MDF1AN4S&city=nanjing
+            - button "收藏" [ref=f4e667]
+          - generic [ref=f4e669]:
+            - generic [ref=f4e671]: "3.8"
+            - generic [ref=f4e672]: 暂无评价数据
+          - generic [ref=f4e673]: 生活服务
+          - generic [ref=f4e675]:
+            - generic [ref=f4e676]: 价格请咨询门店
+            - link "导航到清松汤泉浴室" [ref=f4e677]:
+              - /url: https://uri.amap.com/navigation?to=118.791229,32.048191,%E6%B8%85%E6%9D%BE%E6%B1%A4%E6%B3%89%E6%B5%B4%E5%AE%A4&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e678]: 1.4 公里 · 13 分钟
+      - article [ref=f4e680] [cursor=pointer]:
+        - button "查看郑远元专业修脚房(珠江路店)详情" [ref=f4e681]:
+          - img "郑远元专业修脚房(珠江路店)" [ref=f4e682]
+          - generic [ref=f4e683]: 门店图片
+        - generic [ref=f4e684]:
+          - generic [ref=f4e685]:
+            - generic [ref=f4e686]:
+              - generic [ref=f4e687]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e688]:
+                - link "郑远元专业修脚房(珠江路店)" [ref=f4e689]:
+                  - /url: /washjoy/?place=B0J1B5QDOT&city=nanjing
+            - button "收藏" [ref=f4e690]
+          - generic [ref=f4e692]:
+            - generic [ref=f4e694]: "4.4"
+            - generic [ref=f4e695]: 暂无评价数据
+          - generic [ref=f4e696]: 生活服务
+          - generic [ref=f4e698]:
+            - generic [ref=f4e699]: ¥63 起 / 人
+            - link "导航到郑远元专业修脚房(珠江路店)" [ref=f4e700]:
+              - /url: https://uri.amap.com/navigation?to=118.801247,32.047635,%E9%83%91%E8%BF%9C%E5%85%83%E4%B8%93%E4%B8%9A%E4%BF%AE%E8%84%9A%E6%88%BF(%E7%8F%A0%E6%B1%9F%E8%B7%AF%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e701]: 1.5 公里 · 13 分钟
+      - article [ref=f4e703] [cursor=pointer]:
+        - button "查看妙手初心盲人推拿按摩详情" [ref=f4e704]:
+          - img "妙手初心盲人推拿按摩" [ref=f4e705]
+          - generic [ref=f4e706]: 门店图片
+        - generic [ref=f4e707]:
+          - generic [ref=f4e708]:
+            - generic [ref=f4e709]:
+              - generic [ref=f4e710]: 洗浴中心 · 玄武区
+              - heading [level=3] [ref=f4e711]:
+                - link "妙手初心盲人推拿按摩" [ref=f4e712]:
+                  - /url: /washjoy/?place=B0FFKPSGYY&city=nanjing
+            - button "收藏" [ref=f4e713]
+          - generic [ref=f4e715]:
+            - generic [ref=f4e717]: "4"
+            - generic [ref=f4e718]: 暂无评价数据
+          - generic [ref=f4e719]: 生活服务
+          - generic [ref=f4e721]:
+            - generic [ref=f4e722]: ¥69 起 / 人
+            - link "导航到妙手初心盲人推拿按摩" [ref=f4e723]:
+              - /url: https://uri.amap.com/navigation?to=118.787799,32.049528,%E5%A6%99%E6%89%8B%E5%88%9D%E5%BF%83%E7%9B%B2%E4%BA%BA%E6%8E%A8%E6%8B%BF%E6%8C%89%E6%91%A9&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e724]: 1.5 公里 · 13 分钟
+      - article [ref=f4e726] [cursor=pointer]:
+        - button "查看扬州涌泉足道(如意里店)详情" [ref=f4e727]:
+          - img "扬州涌泉足道(如意里店)" [ref=f4e728]
+          - generic [ref=f4e729]: 门店图片
+        - generic [ref=f4e730]:
+          - generic [ref=f4e731]:
+            - generic [ref=f4e732]:
+              - generic [ref=f4e733]: 足疗会所 · 玄武区
+              - heading [level=3] [ref=f4e734]:
+                - link "扬州涌泉足道(如意里店)" [ref=f4e735]:
+                  - /url: /washjoy/?place=B0FFFWHW6Q&city=nanjing
+            - button "收藏" [ref=f4e736]
+          - generic [ref=f4e738]:
+            - generic [ref=f4e740]: "3.6"
+            - generic [ref=f4e741]: 暂无评价数据
+          - generic [ref=f4e742]: 生活服务
+          - generic [ref=f4e744]:
+            - generic [ref=f4e745]: ¥133 起 / 人
+            - link "导航到扬州涌泉足道(如意里店)" [ref=f4e746]:
+              - /url: https://uri.amap.com/navigation?to=118.793549,32.04693,%E6%89%AC%E5%B7%9E%E6%B6%8C%E6%B3%89%E8%B6%B3%E9%81%93(%E5%A6%82%E6%84%8F%E9%87%8C%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e747]: 1.5 公里 · 13 分钟
+      - article [ref=f4e749] [cursor=pointer]:
+        - button "查看足林水岸详情" [ref=f4e750]:
+          - img "足林水岸" [ref=f4e751]
+          - generic [ref=f4e752]: 分类示意图
+        - generic [ref=f4e753]:
+          - generic [ref=f4e754]:
+            - generic [ref=f4e755]:
+              - generic [ref=f4e756]: 洗浴中心 · 玄武区
+              - heading [level=3] [ref=f4e757]:
+                - link "足林水岸" [ref=f4e758]:
+                  - /url: /washjoy/?place=B0MRHUEBLQ&city=nanjing
+            - button "收藏" [ref=f4e759]
+          - generic [ref=f4e761]:
+            - generic [ref=f4e763]: "4.2"
+            - generic [ref=f4e764]: 暂无评价数据
+          - generic [ref=f4e765]: 生活服务
+          - generic [ref=f4e767]:
+            - generic [ref=f4e768]: ¥168 起 / 人
+            - link "导航到足林水岸" [ref=f4e769]:
+              - /url: https://uri.amap.com/navigation?to=118.784725,32.051175,%E8%B6%B3%E6%9E%97%E6%B0%B4%E5%B2%B8&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e770]: 1.5 公里 · 13 分钟
+      - article [ref=f4e772] [cursor=pointer]:
+        - button "查看悦榕庄沐愈情景SPA会所详情" [ref=f4e773]:
+          - img "悦榕庄沐愈情景SPA会所" [ref=f4e774]
+          - generic [ref=f4e775]: 门店图片
+        - generic [ref=f4e776]:
+          - generic [ref=f4e777]:
+            - generic [ref=f4e778]:
+              - generic [ref=f4e779]: 洗浴中心 · 鼓楼区
+              - heading [level=3] [ref=f4e780]:
+                - link "悦榕庄沐愈情景SPA会所" [ref=f4e781]:
+                  - /url: /washjoy/?place=B0LKLS849G&city=nanjing
+            - button "收藏" [ref=f4e782]
+          - generic [ref=f4e784]:
+            - generic [ref=f4e786]: "4.4"
+            - generic [ref=f4e787]: 暂无评价数据
+          - generic [ref=f4e788]: 生活服务
+          - generic [ref=f4e790]:
+            - generic [ref=f4e791]: ¥1000 起 / 人
+            - link "导航到悦榕庄沐愈情景SPA会所" [ref=f4e792]:
+              - /url: https://uri.amap.com/navigation?to=118.780864,32.062717,%E6%82%A6%E6%A6%95%E5%BA%84%E6%B2%90%E6%84%88%E6%83%85%E6%99%AFSPA%E4%BC%9A%E6%89%80&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e793]: 1.5 公里 · 13 分钟
+      - article [ref=f4e795] [cursor=pointer]:
+        - button "查看郑远元专业修脚房(洪武路店)详情" [ref=f4e796]:
+          - img "郑远元专业修脚房(洪武路店)" [ref=f4e797]
+          - generic [ref=f4e798]: 门店图片
+        - generic [ref=f4e799]:
+          - generic [ref=f4e800]:
+            - generic [ref=f4e801]:
+              - generic [ref=f4e802]: 街边店 · 玄武区
+              - heading [level=3] [ref=f4e803]:
+                - link "郑远元专业修脚房(洪武路店)" [ref=f4e804]:
+                  - /url: /washjoy/?place=B0FFGDBM0O&city=nanjing
+            - button "收藏" [ref=f4e805]
+          - generic [ref=f4e807]:
+            - generic [ref=f4e809]: "4.4"
+            - generic [ref=f4e810]: 暂无评价数据
+          - generic [ref=f4e811]: 生活服务
+          - generic [ref=f4e813]:
+            - generic [ref=f4e814]: ¥67 起 / 人
+            - link "导航到郑远元专业修脚房(洪武路店)" [ref=f4e815]:
+              - /url: https://uri.amap.com/navigation?to=118.79014,32.047644,%E9%83%91%E8%BF%9C%E5%85%83%E4%B8%93%E4%B8%9A%E4%BF%AE%E8%84%9A%E6%88%BF(%E6%B4%AA%E6%AD%A6%E8%B7%AF%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e816]: 1.5 公里 · 14 分钟
+      - article [ref=f4e818] [cursor=pointer]:
+        - button "查看泰谷里·影院足道(太平门店)详情" [ref=f4e819]:
+          - img "泰谷里·影院足道(太平门店)" [ref=f4e820]
+          - generic [ref=f4e821]: 门店图片
+        - generic [ref=f4e822]:
+          - generic [ref=f4e823]:
+            - generic [ref=f4e824]:
+              - generic [ref=f4e825]: 足疗会所 · 玄武区
+              - heading [level=3] [ref=f4e826]:
+                - link "泰谷里·影院足道(太平门店)" [ref=f4e827]:
+                  - /url: /washjoy/?place=B0KGH52MW9&city=nanjing
+            - button "收藏" [ref=f4e828]
+          - generic [ref=f4e830]:
+            - generic [ref=f4e832]: "4.7"
+            - generic [ref=f4e833]: 暂无评价数据
+          - generic [ref=f4e834]: 生活服务
+          - generic [ref=f4e836]:
+            - generic [ref=f4e837]: ¥224 起 / 人
+            - link "导航到泰谷里·影院足道(太平门店)" [ref=f4e838]:
+              - /url: https://uri.amap.com/navigation?to=118.812737,32.056489,%E6%B3%B0%E8%B0%B7%E9%87%8C%C2%B7%E5%BD%B1%E9%99%A2%E8%B6%B3%E9%81%93(%E5%A4%AA%E5%B9%B3%E9%97%A8%E5%BA%97)&mode=bus&policy=1&src=washjoy
+              - generic [ref=f4e839]: 1.6 公里 · 14 分钟
+      - button "继续加载更多门店" [ref=f4e841] [cursor=pointer]
+  - navigation [ref=f4e842]:
+    - link "附近" [ref=f4e843] [cursor=pointer]:
+      - /url: /washjoy/
+    - link "收藏" [ref=f4e848] [cursor=pointer]:
+      - /url: /washjoy/mine?tab=favorites
+    - link "我的" [ref=f4e852] [cursor=pointer]:
+      - /url: /washjoy/mine?tab=mine

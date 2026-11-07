@@ -1,0 +1,28 @@
+- main [ref=f8e3]:
+  - generic [ref=f8e4]:
+    - link "返回首页" [ref=f8e5] [cursor=pointer]:
+      - /url: /washjoy/
+    - heading "我的" [level=1] [ref=f8e7]
+    - link "账号设置" [ref=f8e8] [cursor=pointer]:
+      - /url: /washjoy/account
+  - link "W 登录 / 注册 登录后同步收藏与评价" [ref=f8e10] [cursor=pointer]:
+    - /url: /washjoy/account
+    - generic [ref=f8e11]: W
+    - generic [ref=f8e12]:
+      - generic [ref=f8e13]: 登录 / 注册
+      - generic [ref=f8e15]: 登录后同步收藏与评价
+  - generic [ref=f8e16]:
+    - button "我的收藏" [ref=f8e17] [cursor=pointer]
+    - button "我的评价" [ref=f8e18] [cursor=pointer]
+    - button "我的提交" [ref=f8e19] [cursor=pointer]
+  - generic [ref=f8e20]:
+    - generic [ref=f8e22]: 还没有收藏门店
+    - link "去附近发现好店" [ref=f8e23] [cursor=pointer]:
+      - /url: /washjoy/
+  - navigation [ref=f8e25]:
+    - link "附近" [ref=f8e26] [cursor=pointer]:
+      - /url: /washjoy/
+    - link "收藏" [ref=f8e29] [cursor=pointer]:
+      - /url: /washjoy/mine?tab=favorites
+    - link "我的" [ref=f8e32] [cursor=pointer]:
+      - /url: /washjoy/mine?tab=mine

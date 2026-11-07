@@ -1,9 +1,11 @@
 import { test, expect } from '@playwright/test';
 import { gotoAndSettle, horizontalOverflow } from './helpers';
 
-test('首页渲染门店列表', async ({ page }) => {
+test('首页默认展示大地图与附近门店抽屉', async ({ page }) => {
   await gotoAndSettle(page, '/washjoy/');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('想洗个舒服澡');
+  await expect(page.getByRole('region', { name: '附近门店地图' })).toBeVisible();
+  await expect(page.getByPlaceholder('搜店名、区域或体验')).toBeVisible();
+  await expect(page.getByRole('heading', { level: 2, name: '附近推荐' })).toBeVisible();
   await expect(page.getByText('测试温泉会所').first()).toBeVisible();
   await expect(page.getByText('测试足道馆').first()).toBeVisible();
 });

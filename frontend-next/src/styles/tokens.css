@@ -1,0 +1,96 @@
+/* Design Tokens：前台唯一的字体、字号、图标、圆角、间距、颜色来源。组件只引用变量，不写字面量。 */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../../node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --font-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Segoe UI', Roboto, sans-serif;
+
+  /* 字号阶梯（数据标签 ≥13px；次要说明 11–12px 保留轴刻度/caption 场景） */
+  --text-caption: 11px;   --leading-caption: 14px;
+  --text-footnote: 13px;  --leading-footnote: 18px;
+  --text-subhead: 14px;   --leading-subhead: 18px;
+  --text-body: 15px;      --leading-body: 20px;
+  --text-input: 16px;     --leading-input: 22px; /* 输入控件不得小于 16px，否则 iOS Safari 聚焦时会放大页面 */
+  --text-headline: 16px;  --leading-headline: 21px;
+  --text-title2: 20px;    --leading-title2: 26px;
+  --text-title1: 24px;    --leading-title1: 30px;
+
+  /* 图标：只有三档，线宽统一 */
+  --icon-sm: 14px;
+  --icon-md: 18px;
+  --icon-lg: 22px;
+  --icon-stroke: 1.75;
+
+  /* 圆角、间距（4px 基数） */
+  --radius-tag: 6px;
+  --radius-control: 10px;
+  --radius-card: 14px;
+  --radius-sheet: 20px;
+  --space-1: 4px;  --space-2: 6px;  --space-3: 10px;  --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px;
+  --hit: 44px;
+
+  /* 颜色角色 */
+  --bg: #f6f4ef;
+  --surface: #fdfcf9;
+  --surface-glass: rgba(251, 249, 244, 0.94);
+  --surface-fill: #eeebe4;
+  --text: #292b27;
+  --text-secondary: #74766d;
+  --text-tertiary: #717369;
+  --separator: #dedfd5;
+  --accent: #3d5142;
+  --accent-pressed: #2d3f32;
+  --accent-soft: #e7eae1;
+  --on-accent: #ffffff;
+  --warning: #bd842b;
+  --danger: #c0392b;
+  --success: #3d5142;
+  --focus-ring: rgba(61, 81, 66, 0.45);
+  --warning-soft: rgba(161, 95, 8, 0.10);
+  --danger-soft: rgba(192, 57, 43, 0.09);
+
+  /* 阴影：浮动元素（品牌栏、定位按钮等）用 float；抽屉上边缘用 sheet */
+  --shadow-float: 0 5px 18px rgba(54, 52, 40, 0.12), 0 1px 3px rgba(54, 52, 40, 0.04);
+  --shadow-sheet: 0 -8px 32px rgba(24, 48, 38, 0.12), 0 -1px 0 rgba(24, 48, 38, 0.06);
+  --ease-out: cubic-bezier(0.32, 0.72, 0, 1);
+  --press-scale: 0.97;
+  --motion-press-duration: 140ms;
+  --motion-state-duration: 220ms;
+  --motion-spring: cubic-bezier(0.23, 1, 0.32, 1);
+
+  /* 标签栏高度 */
+  --tabbar-h: 64px;
+
+  /* 安全区 */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+:root {
+  color-scheme: light;
+  --background: var(--bg); --foreground: var(--text); --surface-foreground: var(--text);
+  --overlay: var(--surface); --overlay-foreground: var(--text); --muted: var(--text-secondary);
+  --accent-foreground: var(--on-accent); --default: var(--surface-fill); --default-foreground: var(--text);
+  --field-background: var(--surface); --field-foreground: var(--text); --field-placeholder: var(--text-tertiary);
+  --border: var(--separator); --focus: var(--accent); --danger-foreground: white;
+  --ink: var(--text); --line: var(--separator); --paper: var(--surface); --canvas: var(--bg);
+  --green: var(--accent); --green-dark: var(--accent-pressed); --green-soft: var(--accent-soft);
+  --radius: 0.875rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg:#1b1e1a; --surface:#242923; --surface-glass:rgba(36,41,35,.95); --surface-fill:#30362e;
+    --text:#f1f5f2; --text-secondary:#b2c1b7; --text-tertiary:#9aac9f; --separator:#36483d;
+    --accent:#bbd0ad; --accent-pressed:#d6e5cb; --accent-soft:#35422f; --on-accent:#1e2c1a;
+    --warning:#e8b763; --danger:#ff9a90; --success:#70d5a1; --focus-ring:#70d5a180;
+    --shadow-float:0 6px 22px #0004; --shadow-sheet:0 -4px 24px #0003;
+  }
+}

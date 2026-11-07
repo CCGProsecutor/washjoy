@@ -1,0 +1,26 @@
+[Unit]
+Description=Washjoy React TanStack frontend
+After=network-online.target washjoy-rust-api.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/root/.t3/projects/washjoy/frontend-next
+Environment=NODE_ENV=production
+Environment=NITRO_HOST=127.0.0.1
+Environment=NITRO_PORT=3780
+Environment=WASHJOY_APP_ORIGIN=http://127.0.0.1:3780
+Environment=WASHJOY_API_ORIGIN=http://127.0.0.1:3775
+ExecStart=/usr/local/bin/bun .output/server/index.mjs
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/root/.t3/projects/washjoy/frontend-next/.output
+
+[Install]
+WantedBy=multi-user.target
