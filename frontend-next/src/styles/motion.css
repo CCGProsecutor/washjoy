@@ -1,0 +1,74 @@
+/* Shared interaction motion. Independent scale preserves existing translate/rotate positioning. */
+button, a, [role='button'], input[type='submit'], input[type='button'] {
+  transition: scale var(--motion-press-duration) var(--motion-spring);
+}
+[data-wj-pointer-pressed='true']:not([data-pressed='true']) {
+  scale: var(--press-scale);
+  
+}
+[data-wj-pointer-pressed='true']:disabled,
+[data-wj-pointer-pressed='true'][aria-disabled='true'],
+[data-wj-pointer-pressed='true'][data-disabled='true'] { scale: none;  }
+
+.wj-venue-heart.is-saved { animation: wj-heart-pop 280ms var(--motion-spring); }
+@keyframes wj-heart-pop { 0% { scale: .88;  } 55% { scale: 1.16;  } 100% { scale: 1;  } }
+[data-motion-feedback='error'] { animation: wj-feedback-shake 220ms var(--motion-spring); }
+[data-motion-feedback='success'] { animation: wj-feedback-success 240ms var(--motion-spring); }
+@keyframes wj-feedback-shake { 0%,100% { translate: 0; } 35% { translate: -4px 0; } 65% { translate: 4px 0; } }
+@keyframes wj-feedback-success { 0% { scale: .98; } 55% { scale: 1.015; } 100% { scale: 1; } }
+
+.wj-motion-enter { animation: wj-enter 280ms var(--motion-spring) both; }
+@keyframes wj-enter { from { opacity: 0; translate: 0 8px; } to { opacity: 1; translate: 0; } }
+.wj-motion-enter:nth-child(2) { animation-delay: 40ms; } .wj-motion-enter:nth-child(3) { animation-delay: 80ms; }
+.wj-motion-enter:nth-child(4) { animation-delay: 120ms; } .wj-motion-enter:nth-child(5) { animation-delay: 160ms; }
+.wj-motion-enter:nth-child(6) { animation-delay: 200ms; }
+.wj-motion-enter:nth-child(n+9) { animation: none; }
+.wj-tab[aria-current='page'] .wj-icon { animation: wj-tab-pop 220ms var(--motion-spring); }
+@keyframes wj-tab-pop { 0% { scale: .9; } 60% { scale: 1.12; } 100% { scale: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  button, a, [role='button'], input[type='submit'], input[type='button'] { transition: none; }
+  [data-wj-pointer-pressed='true'] { scale: none;  }
+  .wj-venue-heart.is-saved, [data-motion-feedback='error'], [data-motion-feedback='success'], .wj-tab[aria-current='page'] .wj-icon { animation: none; }
+  .wj-motion-enter { animation: wj-reduced-fade 80ms ease both; }
+}
+@keyframes wj-reduced-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* One consistent system transition for page sections and contextual sheets. */
+.wj-account-content,.wj-mine-content,.wj-admin-content{animation:wj-enter 220ms var(--motion-spring) both}
+.wj-detail{transition:transform 280ms var(--motion-spring),opacity 220ms var(--ease-out)}
+.wj-filter-backdrop{opacity:1;transition:opacity 220ms var(--ease-out)}
+.wj-filter-backdrop[data-entering],.wj-filter-backdrop[data-exiting]{opacity:0}
+.wj-filter-dialog{transform:translateY(0) scale(1);opacity:1;transition:transform 280ms var(--motion-spring),opacity 200ms var(--ease-out)}
+.wj-filter-dialog[data-entering],.wj-filter-dialog[data-exiting]{transform:translateY(24px) scale(.97);opacity:0}
+.wj-directory-categories>button.is-active::after{animation:wj-selection-arrive 220ms var(--motion-spring)}
+.wj-directory-recommend.is-active svg,.wj-travel-row>button.is-active img{animation:wj-selection-icon 220ms var(--motion-spring)}
+@keyframes wj-selection-arrive{from{scale:.35 1;opacity:0}to{scale:1;opacity:1}}
+@keyframes wj-selection-icon{0%{scale:.85;rotate:-6deg}65%{scale:1.12;rotate:2deg}100%{scale:1;rotate:0deg}}
+@media(hover:hover) and (pointer:fine){
+ .wj-venue-card .wj-venue-image img{transition:transform 220ms var(--ease-out)}
+ .wj-venue-card .wj-venue-image:hover img{transform:scale(1.035)}
+}
+@media(prefers-reduced-motion:reduce){
+ .wj-account-content,.wj-mine-content,.wj-admin-content{animation:wj-reduced-fade 80ms ease both}
+ .wj-filter-dialog,.wj-detail{transition:opacity 80ms linear}
+ .wj-filter-dialog[data-entering],.wj-filter-dialog[data-exiting],.wj-detail[data-entering],.wj-detail[data-exiting]{transform:none}
+ .wj-directory-categories>button.is-active::after,.wj-directory-recommend.is-active svg,.wj-travel-row>button.is-active img{animation:none}
+ .wj-venue-card .wj-venue-image:hover img{transform:none}
+}
+/* Full-screen blur is too expensive during touch-driven modal transitions. */
+@media(hover:none),(pointer:coarse){
+ .wj-detail-backdrop,.wj-filter-backdrop,.wj-photo-backdrop.wj-photo-backdrop{backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+/* The sheet takes over motion on release: avoid animating its source beneath
+   ReactAria scroll-lock and focus layout. Pressed scale still responds instantly. */
+.wj-venue-image,.wj-venue-caption h2 button,.wj-hero-image-button,.wj-detail-close,.wj-photo-dialog button{transition:none!important}
+@media(hover:none),(pointer:coarse){
+ .wj-detail .wj-btn-glass{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--surface-glass)}
+}
+/* This hint is decorative; it must not keep animating under the image viewer. */
+.wj-hero-zoom{transition:none!important}
+/* The sheet lifecycle prepares layout before starting its compositor animation. */
+.wj-detail-container.wj-detail-container,.wj-detail-backdrop.wj-detail-backdrop{animation:none!important;transition:none!important;opacity:1}
+.wj-detail-container.wj-detail-container{will-change:transform,opacity}
+.wj-detail.wj-detail{transition:none!important}
+.wj-detail.wj-detail[data-entering],.wj-detail.wj-detail[data-exiting]{transform:none;opacity:1}

@@ -1,0 +1,1 @@
+import{s as e}from"./api-HkjWCZ1W.js";var t={name:`arrow-left`,size:24,node:[[`path`,{d:`m12 19-7-7 7-7`,key:`1l729n`}],[`path`,{d:`M19 12H5`,key:`x3x0zl`}]]};t.node;var n=e(t),r={name:`loader-circle`,size:24,node:[[`path`,{d:`M21 12a9 9 0 1 1-6.219-8.56`,key:`13zald`}]],aliases:[`loader-2`]};r.node;var i=e(r);export{n,i as t};

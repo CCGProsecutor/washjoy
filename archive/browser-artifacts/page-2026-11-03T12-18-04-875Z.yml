@@ -1,0 +1,54 @@
+- generic [ref=f4e3]:
+  - banner [ref=f4e4]:
+    - link "W Washjoy 附近好好洗" [ref=f4e5] [cursor=pointer]:
+      - /url: /washjoy/
+      - generic [ref=f4e6]: W
+      - generic [ref=f4e7]:
+        - text: Washjoy
+        - generic [ref=f4e8]: 附近好好洗
+    - button "开启定位后推荐附近门店" [ref=f4e9] [cursor=pointer]
+    - link "账号" [ref=f4e13] [cursor=pointer]:
+      - /url: /washjoy/account
+  - main [ref=f4e17]:
+    - generic [ref=f4e18]:
+      - generic [ref=f4e19]: 此刻附近
+      - heading "想洗个舒服澡？" [level=1] [ref=f4e21]
+      - paragraph [ref=f4e22]: 30 分钟内，找到适合你的那一间
+    - searchbox "搜索附近门店" [ref=f4e27]
+    - generic [ref=f4e28]:
+      - generic [ref=f4e29]: 南京市
+      - button "筛选" [ref=f4e33] [cursor=pointer]
+    - generic [ref=f4e35]:
+      - generic [ref=f4e36]:
+        - button "全部" [ref=f4e37] [cursor=pointer]
+        - button "洗浴中心" [ref=f4e38] [cursor=pointer]
+        - button "大众澡堂" [ref=f4e39] [cursor=pointer]
+        - button "足疗会所" [ref=f4e40] [cursor=pointer]
+        - button "街边店" [ref=f4e41] [cursor=pointer]
+        - button "私汤" [ref=f4e42] [cursor=pointer]
+      - generic [ref=f4e43]:
+        - button "公交地铁" [ref=f4e44] [cursor=pointer]
+        - button "骑行" [ref=f4e52] [cursor=pointer]
+        - button "驾车" [ref=f4e58] [cursor=pointer]
+      - generic [ref=f4e62]:
+        - button "15 分钟" [ref=f4e63] [cursor=pointer]
+        - button "30 分钟" [ref=f4e67] [cursor=pointer]
+        - button "45 分钟" [ref=f4e71] [cursor=pointer]
+        - button "1 小时" [ref=f4e75] [cursor=pointer]
+    - region "门店位置地图" [ref=f4e79]:
+      - button "重新定位" [ref=f4e86] [cursor=pointer]
+      - generic [ref=f4e90]: 南京市 · 已加载 0 家
+    - generic [ref=f4e92]:
+      - generic [ref=f4e93]:
+        - heading "附近推荐" [level=2] [ref=f4e94]
+        - text: 0 / 0 家已加载
+      - button "站长推荐" [ref=f4e95] [cursor=pointer]
+    - generic [ref=f4e98]: 公交地铁 · 预计 30 分钟 内
+    - generic [ref=f4e99]: 正在加载附近门店…
+  - navigation [ref=f4e100]:
+    - link "附近" [ref=f4e101] [cursor=pointer]:
+      - /url: /washjoy/
+    - link "收藏" [ref=f4e106] [cursor=pointer]:
+      - /url: /washjoy/mine?tab=favorites
+    - link "我的" [ref=f4e110] [cursor=pointer]:
+      - /url: /washjoy/mine?tab=mine

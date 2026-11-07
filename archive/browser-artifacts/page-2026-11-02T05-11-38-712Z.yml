@@ -1,0 +1,184 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "W Washjoy 附近好好洗" [ref=e5] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=e6]: W
+      - generic [ref=e7]:
+        - text: Washjoy
+        - generic [ref=e8]: 附近好好洗
+    - button "获取当前位置" [ref=e9] [cursor=pointer]:
+      - generic [ref=e11]: 定位权限被拒绝
+    - button "我的" [ref=e14] [cursor=pointer]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]: 此刻附近
+        - heading "想洗个舒服澡？" [level=1] [ref=e23]
+        - paragraph [ref=e24]: 30 分钟内，找到适合你的那一间
+      - generic [ref=e25]: 即刻出发
+    - generic [ref=e27]:
+      - textbox "搜店名、区域或想要的体验" [ref=e31]
+      - button "搜附近" [ref=e32] [cursor=pointer]
+    - button "筛选 全部 · 公交地铁 · 30 分钟" [expanded] [active] [ref=e33] [cursor=pointer]:
+      - generic [ref=e34]: 筛选
+      - generic [ref=e36]: 全部 · 公交地铁 · 30 分钟
+    - generic [ref=e244]:
+      - generic [ref=e245]:
+        - button "全部" [ref=e246] [cursor=pointer]
+        - button "洗浴中心" [ref=e247] [cursor=pointer]
+        - button "大众澡堂" [ref=e248] [cursor=pointer]
+        - button "足疗会所" [ref=e249] [cursor=pointer]
+        - button "街边店" [ref=e250] [cursor=pointer]
+        - button "私汤" [ref=e251] [cursor=pointer]
+      - generic [ref=e253]:
+        - button "公交地铁" [ref=e254] [cursor=pointer]
+        - button "骑行" [ref=e263] [cursor=pointer]
+        - button "驾车" [ref=e270] [cursor=pointer]
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic "高德地图" [ref=e41]:
+          - iframe [ref=e207]
+          - generic [ref=e209]:
+            - generic:
+              - generic "清泉里大众浴场 · 22 分钟可达" [ref=e210]:
+                - button "清泉里大众浴场 22 分" [ref=e211] [cursor=pointer]:
+                  - generic [ref=e212]: 清泉里大众浴场
+                  - generic [ref=e213]: 22 分
+              - generic "云水间·城市汤泉 · 27 分钟可达" [ref=e214]:
+                - button "云水间 27 分" [ref=e215] [cursor=pointer]:
+                  - generic [ref=e216]: 云水间
+                  - generic [ref=e217]: 27 分
+              - generic "隐泉·日式私汤 · 29 分钟可达" [ref=e218]:
+                - button "隐泉 29 分" [ref=e219] [cursor=pointer]:
+                  - generic [ref=e220]: 隐泉
+                  - generic [ref=e221]: 29 分
+              - generic "足悦·足疗会所 · 31 分钟可达" [ref=e222]:
+                - button "足悦 31 分" [ref=e223] [cursor=pointer]:
+                  - generic [ref=e224]: 足悦
+                  - generic [ref=e225]: 31 分
+              - generic "巷口热水澡堂 · 35 分钟可达" [ref=e226]:
+                - button "巷口热水澡堂 35 分" [ref=e227] [cursor=pointer]:
+                  - generic [ref=e228]: 巷口热水澡堂
+                  - generic [ref=e229]: 35 分
+          - generic [ref=e232]: © 2026 AutoNavi - GS(2025)5996号
+        - generic [ref=e48]:
+          - generic [ref=e49]: 高德地图
+          - generic [ref=e51]:
+            - button "回到当前位置" [ref=e52] [cursor=pointer]
+            - button "放大地图" [ref=e56] [cursor=pointer]
+            - button "缩小地图" [ref=e58] [cursor=pointer]
+        - generic [ref=e60]: 门店位置 当前位置
+        - generic [ref=e64]: 门店坐标为演示数据
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - heading "附近推荐" [level=2] [ref=e68]
+            - generic [ref=e69]: 5 家符合条件
+          - button "距离较近" [ref=e70] [cursor=pointer]
+        - generic [ref=e74]: 步行 + 公交 / 地铁 · 预计 20 至 35 分钟
+        - generic [ref=e75]:
+          - article [ref=e76]:
+            - button "环境实拍" [ref=e77] [cursor=pointer]
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - generic [ref=e81]:
+                  - generic [ref=e82]: 大众澡堂 · 湖滨
+                  - button "清泉里大众浴场" [ref=e83] [cursor=pointer]
+                - button "收藏" [ref=e84] [cursor=pointer]
+              - generic [ref=e87]:
+                - generic [ref=e90]: "4.6"
+                - generic [ref=e91]: (532 条公开评价)
+              - generic [ref=e92]:
+                - generic [ref=e93]: 传统澡堂
+                - generic [ref=e94]: 搓澡
+                - generic [ref=e95]: 平价
+              - generic [ref=e96]:
+                - generic [ref=e97]:
+                  - generic [ref=e98]: ¥39
+                  - text: 起 / 人
+                - button "22 分钟可达" [ref=e99] [cursor=pointer]
+          - article [ref=e102]:
+            - button "环境实拍" [ref=e103] [cursor=pointer]
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]:
+                  - generic [ref=e108]: 洗浴中心 · 武林广场
+                  - button "云水间·城市汤泉" [ref=e109] [cursor=pointer]
+                - button "收藏" [ref=e110] [cursor=pointer]
+              - generic [ref=e113]:
+                - generic [ref=e116]: "4.8"
+                - generic [ref=e117]: (1,268 条公开评价)
+              - generic [ref=e118]:
+                - generic [ref=e119]: 汗蒸
+                - generic [ref=e120]: 汤池
+                - generic [ref=e121]: 休息大厅
+              - generic [ref=e122]:
+                - generic [ref=e123]:
+                  - generic [ref=e124]: ¥128
+                  - text: 起 / 人
+                - button "27 分钟可达" [ref=e125] [cursor=pointer]
+          - article [ref=e128]:
+            - button "环境实拍" [ref=e129] [cursor=pointer]
+            - generic [ref=e131]:
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - generic [ref=e134]: 私汤 · 黄龙
+                  - button "隐泉·日式私汤" [ref=e135] [cursor=pointer]
+                - button "收藏" [ref=e136] [cursor=pointer]
+              - generic [ref=e139]:
+                - generic [ref=e142]: "4.9"
+                - generic [ref=e143]: (394 条公开评价)
+              - generic [ref=e144]:
+                - generic [ref=e145]: 私汤
+                - generic [ref=e146]: 预约制
+                - generic [ref=e147]: 双人
+              - generic [ref=e148]:
+                - generic [ref=e149]:
+                  - generic [ref=e150]: ¥328
+                  - text: 起 / 人
+                - button "29 分钟可达" [ref=e151] [cursor=pointer]
+          - article [ref=e154]:
+            - button "环境实拍" [ref=e155] [cursor=pointer]
+            - generic [ref=e157]:
+              - generic [ref=e158]:
+                - generic [ref=e159]:
+                  - generic [ref=e160]: 足疗会所 · 凤起路
+                  - button "足悦·足疗会所" [ref=e161] [cursor=pointer]
+                - button "收藏" [ref=e162] [cursor=pointer]
+              - generic [ref=e165]:
+                - generic [ref=e168]: "4.7"
+                - generic [ref=e169]: (846 条公开评价)
+              - generic [ref=e170]:
+                - generic [ref=e171]: 足疗
+                - generic [ref=e172]: 按摩
+                - generic [ref=e173]: 独立包间
+              - generic [ref=e174]:
+                - generic [ref=e175]:
+                  - generic [ref=e176]: ¥168
+                  - text: 起 / 人
+                - button "31 分钟可达" [ref=e177] [cursor=pointer]
+          - article [ref=e180]:
+            - button "环境实拍" [ref=e181] [cursor=pointer]
+            - generic [ref=e183]:
+              - generic [ref=e184]:
+                - generic [ref=e185]:
+                  - generic [ref=e186]: 街边店 · 庆春路
+                  - button "巷口热水澡堂" [ref=e187] [cursor=pointer]
+                - button "收藏" [ref=e188] [cursor=pointer]
+              - generic [ref=e191]:
+                - generic [ref=e194]: "4.4"
+                - generic [ref=e195]: (218 条公开评价)
+              - generic [ref=e196]:
+                - generic [ref=e197]: 街边小店
+                - generic [ref=e198]: 简洁
+                - generic [ref=e199]: 便民
+              - generic [ref=e200]:
+                - generic [ref=e201]:
+                  - generic [ref=e202]: ¥25
+                  - text: 起 / 人
+                - button "35 分钟可达" [ref=e203] [cursor=pointer]
+        - paragraph [ref=e206]: 预计时间仅作筛选参考；真实路线、商户资料与公开评价需接入相应数据源。
+  - navigation [ref=e233]:
+    - button "附近" [ref=e234] [cursor=pointer]
+    - button "收藏" [ref=e237] [cursor=pointer]
+    - button "我的" [ref=e240] [cursor=pointer]

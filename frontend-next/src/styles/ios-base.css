@@ -1,0 +1,42 @@
+/* 前台基础：所有规则限定在 .wj-app 下，后台页面不受影响。 */
+html:has(.wj-app) { -webkit-text-size-adjust: 100%; overscroll-behavior: none; background: var(--bg); }
+.wj-app, .wj-app *, .wj-app *::before, .wj-app *::after { box-sizing: border-box; }
+.wj-app {
+  min-height: 100dvh;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: var(--text-subhead);
+  line-height: var(--leading-subhead);
+  font-variant-numeric: tabular-nums;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+:where(.wj-app) :is(h1, h2, h3, p) { margin: 0; }
+:where(.wj-app) a { color: inherit; text-decoration: none; }
+:where(.wj-app) :is(button, input, textarea, select) { font: inherit; color: inherit; }
+:where(.wj-app) button { background: none; border: 0; padding: 0; cursor: pointer; }
+:where(.wj-app) :is(button, a, [role='button']) { touch-action: manipulation; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+:where(.wj-app) :is(input, textarea, select) { font-size: var(--text-input); line-height: var(--leading-input); }
+:where(.wj-app) :focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 2px; }
+.wj-app [hidden] { display: none !important; }
+.wj-sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* 文字样式（只允许这些） */
+.wj-caption { font-size: var(--text-caption); line-height: var(--leading-caption); }
+.wj-footnote { font-size: var(--text-footnote); line-height: var(--leading-footnote); }
+.wj-subhead { font-size: var(--text-subhead); line-height: var(--leading-subhead); }
+.wj-body { font-size: var(--text-body); line-height: var(--leading-body); }
+.wj-headline { font-size: var(--text-headline); line-height: var(--leading-headline); font-weight: 600; }
+.wj-title2 { font-size: var(--text-title2); line-height: var(--leading-title2); font-weight: 600; letter-spacing: -0.01em; }
+.wj-title1 { font-size: var(--text-title1); line-height: var(--leading-title1); font-weight: 700; letter-spacing: -0.02em; }
+.wj-secondary { color: var(--text-secondary); }
+.wj-clamp-1 { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.wj-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* 毛玻璃只用在悬浮层、抽屉、标签栏 */
+.wj-glass { background: var(--surface-glass); -webkit-backdrop-filter: blur(20px) saturate(180%); backdrop-filter: blur(20px) saturate(180%); }
+@media (prefers-reduced-transparency: reduce) { .wj-glass { background: var(--surface); -webkit-backdrop-filter: none; backdrop-filter: none; } }
+@media (prefers-reduced-motion: reduce) { .wj-app * { scroll-behavior: auto !important; } }

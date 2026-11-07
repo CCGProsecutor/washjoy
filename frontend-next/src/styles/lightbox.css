@@ -1,0 +1,58 @@
+/* A separate modal plane keeps the underlying detail sheet and its scroll position intact. */
+.wj-photo-backdrop.wj-photo-backdrop {
+  position: fixed; inset: 0; z-index: 1100;
+  width: 100%; height: 100dvh; max-height: none; padding: 0;
+  background: rgb(8 10 9 / .94);
+  color: #fff;
+  transition: opacity 250ms var(--ease-out, cubic-bezier(.23, 1, .32, 1));
+}
+.wj-photo-backdrop[data-closing] { opacity: 0; }
+.wj-photo-container.wj-photo-container,
+.wj-photo-dialog.wj-photo-dialog {
+  width: 100%; max-width: none; height: 100dvh; max-height: none;
+  margin: 0; padding: 0; border: 0; border-radius: 0;
+  background: transparent; color: #fff; box-shadow: none;
+  animation: none; transform: none; overflow: hidden;
+}
+.wj-photo-dialog.wj-photo-dialog {
+  display: grid; grid-template-rows: auto minmax(0, 1fr) auto;
+  padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom);
+}
+.wj-photo-dialog-content { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; width: 100%; height: 100%; min-height: 0; }
+.wj-photo-toolbar, .wj-photo-footer {
+  position: relative; z-index: 2; display: flex; align-items: center;
+  justify-content: space-between; gap: 8px; min-height: 64px;
+  padding: 8px max(12px, env(safe-area-inset-left)) 8px max(12px, env(safe-area-inset-right));
+}
+.wj-photo-toolbar { display: grid; grid-template-columns: 96px 1fr 96px; }
+.wj-photo-toolbar > button { justify-self: start; }
+.wj-photo-count { text-align: center; font-size: .875rem; line-height: 1.25rem; font-variant-numeric: tabular-nums; }
+.wj-photo-zoom-tools { display: flex; justify-content: flex-end; gap: 4px; }
+.wj-photo-dialog button {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; min-width: 44px; padding: 0;
+  border: 1px solid rgb(255 255 255 / .2); border-radius: 50%;
+  background: rgb(255 255 255 / .1); color: #fff; cursor: pointer;
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+}
+.wj-photo-dialog button:disabled { opacity: .35; cursor: default; }
+.wj-photo-dialog button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.wj-photo-stage { position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; min-width: 0; min-height: 0; }
+.wj-photo-entry { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; transform-origin: center; }
+.wj-photo-pan { display: flex; align-items: center; justify-content: center; max-width: 100%; max-height: 100%; touch-action: none; user-select: none; cursor: zoom-in; }
+.wj-photo-pan[data-zoomed] { cursor: grab; }
+.wj-photo-pan[data-zoomed]:active { cursor: grabbing; }
+.wj-photo-pan img { display: block; max-width: 100%; max-height: calc(100dvh - 128px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); width: auto; height: auto; object-fit: contain; pointer-events: none; user-select: none; -webkit-user-drag: none; }
+.wj-photo-error { max-width: 22rem; padding: 24px; text-align: center; font-size: 1rem; line-height: 1.5rem; }
+.wj-photo-hint { text-align: center; color: rgb(255 255 255 / .75); font-size: .875rem; line-height: 1.25rem; }
+@media (hover: hover) and (pointer: fine) { .wj-photo-dialog button:hover { background: rgb(255 255 255 / .22); } }
+@media (prefers-reduced-motion: reduce) {
+  .wj-photo-backdrop.wj-photo-backdrop { transition: opacity 100ms; }
+  .wj-photo-dialog button { transition: none; }
+  .wj-photo-dialog button:active { transform: none; }
+}
+/* The image carries the spatial transition. A stable backdrop prevents a second
+   full-screen fade from repeatedly compositing the moving image and toolbar. */
+.wj-photo-backdrop.wj-photo-backdrop { animation:none!important;transition:none!important;opacity:1 }
+.wj-photo-backdrop.wj-photo-backdrop[data-closing] { opacity:1 }
+.wj-photo-entry,.wj-photo-pan { will-change:transform }

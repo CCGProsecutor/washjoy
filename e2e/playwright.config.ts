@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 import path from 'node:path';
 
-const PORT = 4173;
+const PORT = Number(process.env.WASHJOY_PREVIEW_PORT ?? 4173);
 const ROOT = path.resolve(__dirname, '..');
 
 export default defineConfig({
@@ -27,7 +27,7 @@ export default defineConfig({
     { name: 'desktop', use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 950 } } },
     { name: 'mobile', use: { ...devices['Pixel 7'] } },
   ],
-  webServer: {
+  webServer: process.env.PLAYWRIGHT_NO_WEBSERVER === '1' ? undefined : {
     command: 'npm run preview',
     cwd: ROOT,
     url: `http://127.0.0.1:${PORT}/washjoy/`,

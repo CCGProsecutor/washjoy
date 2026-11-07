@@ -1,0 +1,131 @@
+
+> build
+> vite build
+
+vite v8.3.5 building ssr environment for production...
+transforming...
+5:02:04 PM [vite-plugin-svelte] src/routes/+page.svelte:94:251 Visible, non-interactive element `<article>` with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+92:     <section class="results-head"><div><h2>附近推荐</h2><span>{loaded.length} / {shown.length} 家已加载</span></div><button class:active={recommendedOnly} onclick={() => { recommendedOnly = !recommendedOnly; recommendedRefined = false; }}><Star size={15} fill={recommendedOnly ? 'currentColor' : 'none'} />站长推荐</button></section>
+93:     <div class="rule">{recommendedOnly && !recommendedRefined ? '站长推荐 · 按当前交通工具到达时间排序' : `${mode === 'transit' ? '公交地铁' : mode === 'bike' ? '骑行' : '驾车'} · 预计 ${timeLimit === 60 ? '1 小时' : `${timeLimit} 分钟`} 内`}</div>
+94:     {#if status === 'loading'}<div class="empty">正在加载附近门店…</div>{:else if status === 'error'}<div class="empty">门店数据暂时不可用，请稍后重试</div>{:else if !loaded.length}<div class="empty">没有找到符合条件的门店</div>{:else}<div class="place-list">{#each loaded as p (p.id)}<article class="place-card" onclick={() => openDetail(p)}>
+                  ^
+95:       <button class="place-photo" onclick={(e) => { e.stopPropagation(); openDetail(p); }}><img src={p.images[0]} alt={p.name} loading="lazy" /><span>{p.generatedCover ? '分类示意图' : '门店图片'}</span></button>
+96:       <div class="place-info"><div class="place-top"><div>{#if p.recommended}<b class="recommend-tag"><Star size={11} fill="currentColor"/>站长推荐</b>{/if}<small>{p.type} · {p.area}</small><h3>{p.name}</h3></div><button class="favorite" class:on={favorites.includes(p.id)} aria-label="收藏" onclick={(e) => { e.stopPropagation(); toggleFavorite(p.id); }}><Heart size={18} fill={favorites.includes(p.id) ? 'currentColor' : 'none'} /></button></div><div class="rating"><Star size={13} fill="currentColor"/><b>{p.rating || '暂无评分'}</b><span>{p.reviews ? `${p.reviews} 条公开评价` : '暂无评价数据'}</span></div><div class="tags">{#each p.attrs as attr}<span>{attr}</span>{/each}</div><div class="place-bottom"><span>{p.price ? `¥${p.price} 起 / 人` : '价格请咨询门店'}</span><b>{p.distance! < 1 ? `${Math.round(p.distance! * 1000)} 米` : `${p.distance!.toFixed(1)} 公里`} · {p.minutes} 分钟 <ChevronRight size={14}/></b></div></div>
+5:02:04 PM [vite-plugin-svelte] src/routes/+page.svelte:94:251 Non-interactive element `<article>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+92:     <section class="results-head"><div><h2>附近推荐</h2><span>{loaded.length} / {shown.length} 家已加载</span></div><button class:active={recommendedOnly} onclick={() => { recommendedOnly = !recommendedOnly; recommendedRefined = false; }}><Star size={15} fill={recommendedOnly ? 'currentColor' : 'none'} />站长推荐</button></section>
+93:     <div class="rule">{recommendedOnly && !recommendedRefined ? '站长推荐 · 按当前交通工具到达时间排序' : `${mode === 'transit' ? '公交地铁' : mode === 'bike' ? '骑行' : '驾车'} · 预计 ${timeLimit === 60 ? '1 小时' : `${timeLimit} 分钟`} 内`}</div>
+94:     {#if status === 'loading'}<div class="empty">正在加载附近门店…</div>{:else if status === 'error'}<div class="empty">门店数据暂时不可用，请稍后重试</div>{:else if !loaded.length}<div class="empty">没有找到符合条件的门店</div>{:else}<div class="place-list">{#each loaded as p (p.id)}<article class="place-card" onclick={() => openDetail(p)}>
+                  ^
+95:       <button class="place-photo" onclick={(e) => { e.stopPropagation(); openDetail(p); }}><img src={p.images[0]} alt={p.name} loading="lazy" /><span>{p.generatedCover ? '分类示意图' : '门店图片'}</span></button>
+96:       <div class="place-info"><div class="place-top"><div>{#if p.recommended}<b class="recommend-tag"><Star size={11} fill="currentColor"/>站长推荐</b>{/if}<small>{p.type} · {p.area}</small><h3>{p.name}</h3></div><button class="favorite" class:on={favorites.includes(p.id)} aria-label="收藏" onclick={(e) => { e.stopPropagation(); toggleFavorite(p.id); }}><Heart size={18} fill={favorites.includes(p.id) ? 'currentColor' : 'none'} /></button></div><div class="rating"><Star size={13} fill="currentColor"/><b>{p.rating || '暂无评分'}</b><span>{p.reviews ? `${p.reviews} 条公开评价` : '暂无评价数据'}</span></div><div class="tags">{#each p.attrs as attr}<span>{attr}</span>{/each}</div><div class="place-bottom"><span>{p.price ? `¥${p.price} 起 / 人` : '价格请咨询门店'}</span><b>{p.distance! < 1 ? `${Math.round(p.distance! * 1000)} 米` : `${p.distance!.toFixed(1)} 公里`} · {p.minutes} 分钟 <ChevronRight size={14}/></b></div></div>
+5:02:04 PM [vite-plugin-svelte] src/routes/+page.svelte:102:187 `<div>` with a touchstart or touchend handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+100: </div>
+101: 
+102: {#if detail}<div class="modal-backdrop" role="presentation" onclick={(e) => e.currentTarget === e.target && (detail = null)}><section class="detail-modal" role="dialog" aria-modal="true"><div class="detail-cover" ontouchstart={(e) => touchX = e.touches[0].clientX} ontouchend={swipe}><img src={detail.images[gallery] || spaImage} alt={detail.name} /><button class="close" aria-label="关闭" onclick={() => detail = null}><X size={20}/></button><span>{gallery + 1} / {detail.images.length}</span></div><div class="detail-body"><small>{detail.type} · {detail.area}</small><h2>{detail.name}</h2><p><MapPin size={14}/>{detail.address || '暂无详细地址'}</p><div class="facts"><b>{detail.minutes} 分钟可达</b><b>{detail.price ? `¥${detail.price} 起` : '价格待咨询'}</b><b>{detail.hours || '营业时间待补充'}</b></div><h3>服务特色</h3><div class="tags">{#each detail.features as feature}<span>{feature}</span>{/each}</div><h3>公开评价 {reviews.length ? `(${reviews.length})` : ''}</h3>{#if reviewLoading}<p class="hint">正在加载评价…</p>{:else if reviews.length}{#each reviews as review}<article class="review-item"><b>{review.author || 'Washjoy 用户'} · {'★'.repeat(review.rating || 5)}</b><p>{review.text}</p></article>{/each}{:else}<p class="hint">暂无公开评价，来写第一条。</p>{/if}{#if authUser}<form class="review-form" onsubmit={submitReview}><div class="review-stars">{#each [1,2,3,4,5] as star}<button type="button" class:active={reviewRating >= star} onclick={() => reviewRating = star}>★</button>{/each}</div><textarea bind:value={reviewText} required maxlength="500" placeholder="分享你的真实体验"></textarea><button class="review-button" type="submit">发布评价</button></form>{:else}<button class="review-button" onclick={() => loginPrompt = true}>登录后写评价</button>{/if}</div></section></div>{/if}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+103: {#if loginPrompt}<div class="modal-backdrop" role="presentation" onclick={(e) => e.currentTarget === e.target && (loginPrompt = false)}><section class="prompt" role="dialog"><h2>登录后写评价</h2><p>登录后才能发布评价，评价会同步保存到账号和门店后台。</p><div><button onclick={() => loginPrompt = false}>稍后再说</button><a href="account/">去登录<ChevronRight size={16}/></a></div></section></div>{/if}
+104: {#if toast}<div class="toast">{toast}</div>{/if}
+✓ 3767 modules transformed.
+rendering chunks...
+computing gzip size...
+.svelte-kit/output/server/.vite/manifest.json                           4.19 kB │ gzip:  0.66 kB
+.svelte-kit/output/server/_app/immutable/assets/_layout.CVrNkCy7.css   26.81 kB │ gzip:  6.64 kB
+.svelte-kit/output/server/chunks/index-server.js                        0.03 kB │ gzip:  0.05 kB
+.svelte-kit/output/server/entries/pages/_layout.ts.js                   0.10 kB │ gzip:  0.11 kB │ map:   0.18 kB
+.svelte-kit/output/server/entries/hooks.universal.js                    0.20 kB │ gzip:  0.18 kB │ map:   0.40 kB
+.svelte-kit/output/server/entries/pages/_layout.svelte.js               0.25 kB │ gzip:  0.20 kB │ map:   0.32 kB
+.svelte-kit/output/server/env.js                                        0.29 kB │ gzip:  0.18 kB │ map:   0.57 kB
+.svelte-kit/output/server/entries/fallbacks/error.svelte.js             1.06 kB │ gzip:  0.42 kB │ map:   2.58 kB
+.svelte-kit/output/server/index.js                                      2.24 kB │ gzip:  0.90 kB │ map:   3.32 kB
+.svelte-kit/output/server/chunks/user-round.js                          4.98 kB │ gzip:  2.49 kB │ map:   4.98 kB
+.svelte-kit/output/server/chunks/log-out.js                             9.80 kB │ gzip:  2.68 kB │ map:   9.87 kB
+.svelte-kit/output/server/chunks/star.js                               10.41 kB │ gzip:  3.06 kB │ map:  10.44 kB
+.svelte-kit/output/server/entries/pages/account/_page.svelte.js        15.65 kB │ gzip:  4.00 kB │ map:  20.40 kB
+.svelte-kit/output/server/chunks/api.js                                21.50 kB │ gzip:  5.44 kB │ map:  25.61 kB
+.svelte-kit/output/server/chunks/server-errors.js                      23.96 kB │ gzip:  4.49 kB │ map:  34.73 kB
+.svelte-kit/output/server/entries/pages/admin/_page.svelte.js          38.91 kB │ gzip:  3.15 kB │ map:  72.16 kB
+.svelte-kit/output/server/entries/pages/_page.svelte.js                40.88 kB │ gzip:  6.24 kB │ map:  51.05 kB
+.svelte-kit/output/server/chunks/server.js                             47.74 kB │ gzip: 13.27 kB │ map: 127.53 kB
+.svelte-kit/output/server/remote-entry.js                              54.25 kB │ gzip: 11.82 kB │ map:  89.77 kB
+.svelte-kit/output/server/chunks/internal.js                           87.98 kB │ gzip: 24.17 kB │ map: 192.28 kB
+.svelte-kit/output/server/chunks/instance.js                          117.64 kB │ gzip: 31.68 kB │ map: 240.16 kB
+
+✓ built in 18.28s
+Analysing routes
+(node:562377) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Building app
+vite v8.3.5 building client environment for production...
+transforming...
+5:02:28 PM [vite-plugin-svelte] src/routes/+page.svelte:94:251 Visible, non-interactive element `<article>` with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+92:     <section class="results-head"><div><h2>附近推荐</h2><span>{loaded.length} / {shown.length} 家已加载</span></div><button class:active={recommendedOnly} onclick={() => { recommendedOnly = !recommendedOnly; recommendedRefined = false; }}><Star size={15} fill={recommendedOnly ? 'currentColor' : 'none'} />站长推荐</button></section>
+93:     <div class="rule">{recommendedOnly && !recommendedRefined ? '站长推荐 · 按当前交通工具到达时间排序' : `${mode === 'transit' ? '公交地铁' : mode === 'bike' ? '骑行' : '驾车'} · 预计 ${timeLimit === 60 ? '1 小时' : `${timeLimit} 分钟`} 内`}</div>
+94:     {#if status === 'loading'}<div class="empty">正在加载附近门店…</div>{:else if status === 'error'}<div class="empty">门店数据暂时不可用，请稍后重试</div>{:else if !loaded.length}<div class="empty">没有找到符合条件的门店</div>{:else}<div class="place-list">{#each loaded as p (p.id)}<article class="place-card" onclick={() => openDetail(p)}>
+                  ^
+95:       <button class="place-photo" onclick={(e) => { e.stopPropagation(); openDetail(p); }}><img src={p.images[0]} alt={p.name} loading="lazy" /><span>{p.generatedCover ? '分类示意图' : '门店图片'}</span></button>
+96:       <div class="place-info"><div class="place-top"><div>{#if p.recommended}<b class="recommend-tag"><Star size={11} fill="currentColor"/>站长推荐</b>{/if}<small>{p.type} · {p.area}</small><h3>{p.name}</h3></div><button class="favorite" class:on={favorites.includes(p.id)} aria-label="收藏" onclick={(e) => { e.stopPropagation(); toggleFavorite(p.id); }}><Heart size={18} fill={favorites.includes(p.id) ? 'currentColor' : 'none'} /></button></div><div class="rating"><Star size={13} fill="currentColor"/><b>{p.rating || '暂无评分'}</b><span>{p.reviews ? `${p.reviews} 条公开评价` : '暂无评价数据'}</span></div><div class="tags">{#each p.attrs as attr}<span>{attr}</span>{/each}</div><div class="place-bottom"><span>{p.price ? `¥${p.price} 起 / 人` : '价格请咨询门店'}</span><b>{p.distance! < 1 ? `${Math.round(p.distance! * 1000)} 米` : `${p.distance!.toFixed(1)} 公里`} · {p.minutes} 分钟 <ChevronRight size={14}/></b></div></div>
+5:02:28 PM [vite-plugin-svelte] src/routes/+page.svelte:94:251 Non-interactive element `<article>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+92:     <section class="results-head"><div><h2>附近推荐</h2><span>{loaded.length} / {shown.length} 家已加载</span></div><button class:active={recommendedOnly} onclick={() => { recommendedOnly = !recommendedOnly; recommendedRefined = false; }}><Star size={15} fill={recommendedOnly ? 'currentColor' : 'none'} />站长推荐</button></section>
+93:     <div class="rule">{recommendedOnly && !recommendedRefined ? '站长推荐 · 按当前交通工具到达时间排序' : `${mode === 'transit' ? '公交地铁' : mode === 'bike' ? '骑行' : '驾车'} · 预计 ${timeLimit === 60 ? '1 小时' : `${timeLimit} 分钟`} 内`}</div>
+94:     {#if status === 'loading'}<div class="empty">正在加载附近门店…</div>{:else if status === 'error'}<div class="empty">门店数据暂时不可用，请稍后重试</div>{:else if !loaded.length}<div class="empty">没有找到符合条件的门店</div>{:else}<div class="place-list">{#each loaded as p (p.id)}<article class="place-card" onclick={() => openDetail(p)}>
+                  ^
+95:       <button class="place-photo" onclick={(e) => { e.stopPropagation(); openDetail(p); }}><img src={p.images[0]} alt={p.name} loading="lazy" /><span>{p.generatedCover ? '分类示意图' : '门店图片'}</span></button>
+96:       <div class="place-info"><div class="place-top"><div>{#if p.recommended}<b class="recommend-tag"><Star size={11} fill="currentColor"/>站长推荐</b>{/if}<small>{p.type} · {p.area}</small><h3>{p.name}</h3></div><button class="favorite" class:on={favorites.includes(p.id)} aria-label="收藏" onclick={(e) => { e.stopPropagation(); toggleFavorite(p.id); }}><Heart size={18} fill={favorites.includes(p.id) ? 'currentColor' : 'none'} /></button></div><div class="rating"><Star size={13} fill="currentColor"/><b>{p.rating || '暂无评分'}</b><span>{p.reviews ? `${p.reviews} 条公开评价` : '暂无评价数据'}</span></div><div class="tags">{#each p.attrs as attr}<span>{attr}</span>{/each}</div><div class="place-bottom"><span>{p.price ? `¥${p.price} 起 / 人` : '价格请咨询门店'}</span><b>{p.distance! < 1 ? `${Math.round(p.distance! * 1000)} 米` : `${p.distance!.toFixed(1)} 公里`} · {p.minutes} 分钟 <ChevronRight size={14}/></b></div></div>
+5:02:28 PM [vite-plugin-svelte] src/routes/+page.svelte:102:187 `<div>` with a touchstart or touchend handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+100: </div>
+101: 
+102: {#if detail}<div class="modal-backdrop" role="presentation" onclick={(e) => e.currentTarget === e.target && (detail = null)}><section class="detail-modal" role="dialog" aria-modal="true"><div class="detail-cover" ontouchstart={(e) => touchX = e.touches[0].clientX} ontouchend={swipe}><img src={detail.images[gallery] || spaImage} alt={detail.name} /><button class="close" aria-label="关闭" onclick={() => detail = null}><X size={20}/></button><span>{gallery + 1} / {detail.images.length}</span></div><div class="detail-body"><small>{detail.type} · {detail.area}</small><h2>{detail.name}</h2><p><MapPin size={14}/>{detail.address || '暂无详细地址'}</p><div class="facts"><b>{detail.minutes} 分钟可达</b><b>{detail.price ? `¥${detail.price} 起` : '价格待咨询'}</b><b>{detail.hours || '营业时间待补充'}</b></div><h3>服务特色</h3><div class="tags">{#each detail.features as feature}<span>{feature}</span>{/each}</div><h3>公开评价 {reviews.length ? `(${reviews.length})` : ''}</h3>{#if reviewLoading}<p class="hint">正在加载评价…</p>{:else if reviews.length}{#each reviews as review}<article class="review-item"><b>{review.author || 'Washjoy 用户'} · {'★'.repeat(review.rating || 5)}</b><p>{review.text}</p></article>{/each}{:else}<p class="hint">暂无公开评价，来写第一条。</p>{/if}{#if authUser}<form class="review-form" onsubmit={submitReview}><div class="review-stars">{#each [1,2,3,4,5] as star}<button type="button" class:active={reviewRating >= star} onclick={() => reviewRating = star}>★</button>{/each}</div><textarea bind:value={reviewText} required maxlength="500" placeholder="分享你的真实体验"></textarea><button class="review-button" type="submit">发布评价</button></form>{:else}<button class="review-button" onclick={() => loginPrompt = true}>登录后写评价</button>{/if}</div></section></div>{/if}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+103: {#if loginPrompt}<div class="modal-backdrop" role="presentation" onclick={(e) => e.currentTarget === e.target && (loginPrompt = false)}><section class="prompt" role="dialog"><h2>登录后写评价</h2><p>登录后才能发布评价，评价会同步保存到账号和门店后台。</p><div><button onclick={() => loginPrompt = false}>稍后再说</button><a href="account/">去登录<ChevronRight size={16}/></a></div></section></div>{/if}
+104: {#if toast}<div class="toast">{toast}</div>{/if}
+✓ 3807 modules transformed.
+rendering chunks...
+computing gzip size...
+.svelte-kit/output/client/_app/version.json                          0.02 kB │ gzip:  0.04 kB
+.svelte-kit/output/client/.vite/manifest.json                        4.70 kB │ gzip:  0.73 kB
+.svelte-kit/output/client/_app/immutable/assets/0.CVrNkCy7.css      26.81 kB │ gzip:  6.64 kB
+.svelte-kit/output/client/_app/immutable/entry/payload.DSmR2FwN.js   0.06 kB │ gzip:  0.07 kB
+.svelte-kit/output/client/_app/immutable/nodes/1.DFsw0hn0.js         0.32 kB │ gzip:  0.24 kB
+.svelte-kit/output/client/_app/immutable/nodes/0.DFLGFPZz.js         0.33 kB │ gzip:  0.26 kB
+.svelte-kit/output/client/_app/immutable/chunks/DiWpDS5K.js          0.40 kB │ gzip:  0.31 kB
+.svelte-kit/output/client/_app/immutable/entry/start.BlfCecwd.js     0.61 kB │ gzip:  0.33 kB
+.svelte-kit/output/client/_app/immutable/chunks/B4PCuKki.js          0.73 kB │ gzip:  0.35 kB
+.svelte-kit/output/client/_app/immutable/chunks/D7A72K_M.js          1.28 kB │ gzip:  0.53 kB
+.svelte-kit/output/client/_app/immutable/chunks/Bjy-W4x2.js          1.36 kB │ gzip:  0.65 kB
+.svelte-kit/output/client/_app/immutable/chunks/CRzLMJPS.js          1.53 kB │ gzip:  0.80 kB
+.svelte-kit/output/client/_app/immutable/entry/app.DRLEQivl.js       1.73 kB │ gzip:  0.69 kB
+.svelte-kit/output/client/_app/immutable/chunks/DxcuwmUV.js          4.29 kB │ gzip:  2.36 kB
+.svelte-kit/output/client/_app/immutable/chunks/B7ItLlQj.js          4.30 kB │ gzip:  1.94 kB
+.svelte-kit/output/client/_app/immutable/nodes/3.Cx7Mw9ep.js         6.49 kB │ gzip:  3.00 kB
+.svelte-kit/output/client/_app/immutable/nodes/2.DyWe9L28.js        15.97 kB │ gzip:  6.73 kB
+.svelte-kit/output/client/_app/immutable/nodes/4.CvD2gR1r.js        23.68 kB │ gzip:  8.55 kB
+.svelte-kit/output/client/_app/immutable/chunks/B-x4g4Tn.js         39.74 kB │ gzip: 14.66 kB
+.svelte-kit/output/client/_app/immutable/chunks/DKgeEOeB.js         52.48 kB │ gzip: 20.09 kB
+
+✓ built in 19.37s
+[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 18.7s of this 19.3s build (97%).
+The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - plugin vite-plugin-svelte:compile transform (55%, 10.7s, 1693 calls)
+  - plugin vite-plugin-svelte:preprocess transform (14%, 2.7s, 1693 calls)
+Additional callback time came from the callbacks below and from callbacks under 1s.
+1 callback is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
+  - plugin vite-plugin-sveltekit-guard resolveId (15226 calls)
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+
+(node:562377) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Prerendering
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-static
+(node:562377) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Wrote site to "build"
+✔ done

@@ -1,0 +1,54 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "W Washjoy 附近好好洗" [ref=e4] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=e5]: W
+      - generic [ref=e6]:
+        - text: Washjoy
+        - generic [ref=e7]: 附近好好洗
+    - button "获取当前位置" [ref=e8] [cursor=pointer]:
+      - generic [ref=e10]: 南京市
+    - button "账号" [ref=e13] [cursor=pointer]
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: 此刻附近
+        - heading "想洗个舒服澡？" [level=1] [ref=e22]
+        - paragraph [ref=e23]: 30 分钟内，找到适合你的那一间
+      - generic [ref=e24]: 即刻出发
+    - generic [ref=e26]:
+      - textbox "搜店名、区域或想要的体验" [ref=e30]
+      - button "搜附近" [ref=e31] [cursor=pointer]
+    - generic [ref=e32]:
+      - generic [ref=e33]: 开启定位后推荐附近门店
+      - button "筛选 全部 · 公交地铁 · 30 分钟" [ref=e37] [cursor=pointer]:
+        - generic [ref=e38]: 筛选
+        - generic [ref=e40]: 全部 · 公交地铁 · 30 分钟
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - generic "高德地图" [ref=e45]
+        - generic [ref=e46]:
+          - generic [ref=e47]: 高德地图 · 南京市
+          - generic [ref=e49]:
+            - button "回到当前位置" [ref=e50] [cursor=pointer]
+            - button "放大地图" [ref=e54] [cursor=pointer]
+            - button "缩小地图" [ref=e56] [cursor=pointer]
+        - generic [ref=e58]: 门店位置 当前位置
+        - generic [ref=e62]: 高德地图 · 已加载 0 家
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - heading "附近推荐" [level=2] [ref=e66]
+            - text: 正在加载附近门店
+          - generic [ref=e67]:
+            - combobox "排序方式" [ref=e72]:
+              - option "距离优先" [selected]
+              - option "通勤时间"
+              - option "价格优先"
+            - button "站长推荐" [ref=e73] [cursor=pointer]
+        - generic [ref=e77]: 步行或公交 / 地铁 · 预计 30 分钟 内
+        - button "暂按南京市中心估算，开启定位可查看真实附近结果 定位" [ref=e78] [cursor=pointer]:
+          - generic [ref=e82]: 暂按南京市中心估算，开启定位可查看真实附近结果
+          - generic [ref=e83]: 定位
+        - generic [ref=e86]: 正在加载 南京市 的附近门店…
+        - paragraph [ref=e88]: 门店信息来自高德地图及站长维护；标注“分类示意图”的图片为 AI 生成，不代表该门店实拍。推荐围绕当前定位；时间按当前出行方式估算，公交地铁含步行接驳，不是实时路线规划。

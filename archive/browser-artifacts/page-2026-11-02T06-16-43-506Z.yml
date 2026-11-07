@@ -1,0 +1,246 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "W Washjoy 附近好好洗" [ref=e5] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=e6]: W
+      - generic [ref=e7]:
+        - text: Washjoy
+        - generic [ref=e8]: 附近好好洗
+    - button "获取当前位置" [ref=e9] [cursor=pointer]:
+      - generic [ref=e11]: 定位权限被拒绝
+    - button "我的" [ref=e14] [cursor=pointer]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]: 此刻附近
+        - heading "想洗个舒服澡？" [level=1] [ref=e23]
+        - paragraph [ref=e24]: 30 分钟内，找到适合你的那一间
+      - generic [ref=e25]: 即刻出发
+    - generic [ref=e27]:
+      - textbox "搜店名、区域或想要的体验" [ref=e31]
+      - button "搜附近" [ref=e32] [cursor=pointer]
+    - generic [ref=e33]:
+      - combobox "选择城市" [ref=e38] [cursor=pointer]:
+        - option "南京市" [selected]
+        - option "扬州市"
+        - option "镇江市"
+      - button "筛选 全部 · 公交地铁 · 30 分钟" [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]: 筛选
+        - generic [ref=e42]: 全部 · 公交地铁 · 30 分钟
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic "附近门店地图预览" [ref=e47]:
+          - button "25 分" [ref=e87] [cursor=pointer]
+          - button "26 分" [ref=e92] [cursor=pointer]
+          - button "27 分" [ref=e97] [cursor=pointer]
+          - button "28 分" [ref=e102] [cursor=pointer]
+          - button "31 分" [ref=e107] [cursor=pointer]
+          - button "34 分" [ref=e112] [cursor=pointer]
+          - button "34 分" [ref=e117] [cursor=pointer]
+          - generic [ref=e57]: 附近门店预览 · 可点击门店查看详情
+        - generic [ref=e58]:
+          - generic [ref=e59]: 高德地图 · 南京市
+          - generic [ref=e61]:
+            - button "回到当前位置" [ref=e62] [cursor=pointer]
+            - button "放大地图" [ref=e66] [cursor=pointer]
+            - button "缩小地图" [ref=e68] [cursor=pointer]
+        - generic [ref=e70]: 门店位置 当前位置
+        - generic [ref=e74]: 门店信息来自高德地图
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - heading "附近推荐" [level=2] [ref=e78]
+            - text: 7 家符合条件
+          - button "距离较近" [ref=e79] [cursor=pointer]
+        - generic [ref=e83]: 步行 + 公交 / 地铁 · 预计 20 至 35 分钟
+        - generic [ref=e84]:
+          - article [ref=e122]:
+            - button "高德门店" [ref=e123] [cursor=pointer]
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - generic [ref=e127]:
+                  - generic [ref=e128]: 洗浴中心 · 鼓楼区
+                  - button "悦汤汇韩式汗蒸" [ref=e129] [cursor=pointer]
+                - button "收藏" [ref=e130] [cursor=pointer]
+              - generic [ref=e133]:
+                - generic [ref=e136]: "4.5"
+                - generic [ref=e137]: 暂无公开评价
+              - generic [ref=e138]:
+                - generic [ref=e139]: 建宁路
+                - generic [ref=e140]: 生活服务
+              - generic [ref=e141]:
+                - generic [ref=e142]:
+                  - generic [ref=e143]: ¥114
+                  - text: 起 / 人
+                - button "25 分钟可达" [ref=e144] [cursor=pointer]
+          - article [ref=e147]:
+            - button "高德门店" [ref=e148] [cursor=pointer]
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - generic [ref=e152]:
+                  - generic [ref=e153]: 足疗会所 · 鼓楼区
+                  - button "风云足艺" [active] [ref=e154] [cursor=pointer]
+                - button "收藏" [ref=e155] [cursor=pointer]
+              - generic [ref=e158]:
+                - generic [ref=e161]: 暂无评分
+                - generic [ref=e162]: 暂无公开评价
+              - generic [ref=e163]:
+                - generic [ref=e164]: 三牌楼
+                - generic [ref=e165]: 生活服务
+              - generic [ref=e166]:
+                - generic [ref=e167]:
+                  - generic [ref=e168]: ¥300
+                  - text: 起 / 人
+                - button "26 分钟可达" [ref=e169] [cursor=pointer]
+          - article [ref=e172]:
+            - button "高德门店" [ref=e173] [cursor=pointer]
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e177]:
+                  - generic [ref=e178]: 洗浴中心 · 秦淮区
+                  - button "肆拾汤温泉(南京夫子庙国风店)" [ref=e179] [cursor=pointer]
+                - button "收藏" [ref=e180] [cursor=pointer]
+              - generic [ref=e183]:
+                - generic [ref=e186]: "4.6"
+                - generic [ref=e187]: 暂无公开评价
+              - generic [ref=e188]:
+                - generic [ref=e189]: 夫子庙
+                - generic [ref=e190]: 生活服务
+              - generic [ref=e191]:
+                - generic [ref=e192]:
+                  - generic [ref=e193]: ¥175
+                  - text: 起 / 人
+                - button "27 分钟可达" [ref=e194] [cursor=pointer]
+          - article [ref=e197]:
+            - button "高德门店" [ref=e198] [cursor=pointer]
+            - generic [ref=e200]:
+              - generic [ref=e201]:
+                - generic [ref=e202]:
+                  - generic [ref=e203]: 洗浴中心 · 秦淮区
+                  - button "陆琴脚艺(夫子庙店)" [ref=e204] [cursor=pointer]
+                - button "收藏" [ref=e205] [cursor=pointer]
+              - generic [ref=e208]:
+                - generic [ref=e211]: "4.7"
+                - generic [ref=e212]: 暂无公开评价
+              - generic [ref=e213]:
+                - generic [ref=e214]: 升州路
+                - generic [ref=e215]: 生活服务
+              - generic [ref=e216]:
+                - generic [ref=e217]:
+                  - generic [ref=e218]: ¥107
+                  - text: 起 / 人
+                - button "28 分钟可达" [ref=e219] [cursor=pointer]
+          - article [ref=e222]:
+            - button "高德门店" [ref=e223] [cursor=pointer]
+            - generic [ref=e225]:
+              - generic [ref=e226]:
+                - generic [ref=e227]:
+                  - generic [ref=e228]: 大众澡堂 · 秦淮区
+                  - button "来福池大澡堂" [ref=e229] [cursor=pointer]
+                - button "收藏" [ref=e230] [cursor=pointer]
+              - generic [ref=e233]:
+                - generic [ref=e236]: "4.6"
+                - generic [ref=e237]: 暂无公开评价
+              - generic [ref=e238]:
+                - generic [ref=e239]: 苜蓿园
+                - generic [ref=e240]: 生活服务
+              - generic [ref=e241]:
+                - generic [ref=e242]:
+                  - generic [ref=e243]: ¥30
+                  - text: 起 / 人
+                - button "31 分钟可达" [ref=e244] [cursor=pointer]
+          - article [ref=e247]:
+            - button "高德门店" [ref=e248] [cursor=pointer]
+            - generic [ref=e250]:
+              - generic [ref=e251]:
+                - generic [ref=e252]:
+                  - generic [ref=e253]: 洗浴中心 · 鼓楼区
+                  - button "陆琴脚艺(龙江店)" [ref=e254] [cursor=pointer]
+                - button "收藏" [ref=e255] [cursor=pointer]
+              - generic [ref=e258]:
+                - generic [ref=e261]: "4.7"
+                - generic [ref=e262]: 暂无公开评价
+              - generic [ref=e263]:
+                - generic [ref=e264]: 清凉门
+                - generic [ref=e265]: 生活服务
+              - generic [ref=e266]:
+                - generic [ref=e267]:
+                  - generic [ref=e268]: ¥161
+                  - text: 起 / 人
+                - button "34 分钟可达" [ref=e269] [cursor=pointer]
+          - article [ref=e272]:
+            - button "高德门店" [ref=e273] [cursor=pointer]
+            - generic [ref=e275]:
+              - generic [ref=e276]:
+                - generic [ref=e277]:
+                  - generic [ref=e278]: 洗浴中心 · 建邺区
+                  - button "扬州搓背馆(建邺店)" [ref=e279] [cursor=pointer]
+                - button "收藏" [ref=e280] [cursor=pointer]
+              - generic [ref=e283]:
+                - generic [ref=e286]: "4.7"
+                - generic [ref=e287]: 暂无公开评价
+              - generic [ref=e288]:
+                - generic [ref=e289]: 茶南
+                - generic [ref=e290]: 餐饮服务
+              - generic [ref=e291]:
+                - generic [ref=e292]:
+                  - generic [ref=e293]: ¥294
+                  - text: 起 / 人
+                - button "34 分钟可达" [ref=e294] [cursor=pointer]
+        - paragraph [ref=e86]: 门店名称、地址、图片与公开评价来自高德地图；预计时间为基于距离的估算，不代表实时路线。
+  - dialog [ref=e298]:
+    - generic [ref=e299]:
+      - button "查看原图" [ref=e300]:
+        - img "风云足艺门店图片 1" [ref=e301]
+      - button "关闭" [ref=e302] [cursor=pointer]
+      - button "上一张" [ref=e306] [cursor=pointer]
+      - button "下一张" [ref=e309] [cursor=pointer]
+      - generic [ref=e312]: 1 / 2
+    - generic [ref=e313]:
+      - generic [ref=e314]: 足疗会所 · 高德门店信息
+      - generic [ref=e316]:
+        - heading "风云足艺" [level=2] [ref=e317]
+        - generic [ref=e318]: 南京市鼓楼区西瓜浦桥15号（婧帅烟酒店旁）
+      - generic [ref=e322]:
+        - generic [ref=e323]:
+          - text: 营业时间
+          - generic [ref=e324]: 15:00-02:00
+        - generic [ref=e325]:
+          - text: 参考人均
+          - generic [ref=e326]: ¥300 起
+        - generic [ref=e327]:
+          - text: 当前预计到达
+          - generic [ref=e328]: 26 分钟（估算）
+        - generic [ref=e329]:
+          - text: 门店类别
+          - generic [ref=e330]: 暖冬套餐
+      - heading "服务特色" [level=3] [ref=e331]
+      - paragraph [ref=e332]: 暖冬套餐 · 三牌楼 · 足疗会所 · 南京
+      - generic [ref=e333]:
+        - generic [ref=e334]: 暖冬套餐
+        - generic [ref=e335]: 三牌楼
+        - generic [ref=e336]: 足疗会所
+        - generic [ref=e337]: 南京
+      - generic [ref=e338]:
+        - heading "门店技师" [level=3] [ref=e339]
+        - generic [ref=e340]: 左右滑动查看更多
+      - generic [ref=e341]: 高德地点搜索未提供技师资料
+      - generic [ref=e343]:
+        - heading "公开评价" [level=3] [ref=e344]
+        - generic [ref=e345]: 暂无公开评价数据
+      - generic [ref=e346]:
+        - paragraph [ref=e347]: 高德地点搜索未提供评价正文，请打开高德地图查看该门店的最新公开评价。
+        - text: 来源：高德地图地点搜索
+      - generic [ref=e348]:
+        - heading "写一条评价" [level=3] [ref=e349]
+        - generic [ref=e350]: 分享真实到店体验
+      - generic [ref=e351]:
+        - combobox [ref=e352]:
+          - option "★★★★★ 很满意" [selected]
+          - option "★★★★☆ 满意"
+          - option "★★★☆☆ 还可以"
+          - option "★★☆☆☆ 一般"
+          - option "★☆☆☆☆ 不满意"
+        - textbox "环境、服务或体验都可以写下来" [ref=e353]
+        - button "保存评价" [ref=e354] [cursor=pointer]
+      - paragraph [ref=e358]: 门店基础信息来自高德公开数据；用户评价与提交内容保存在当前设备。

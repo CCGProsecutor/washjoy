@@ -1,0 +1,42 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "W Washjoy 附近好好洗" [ref=e5] [cursor=pointer]:
+      - /url: /washjoy/
+      - generic [ref=e6]: W
+      - generic [ref=e7]:
+        - text: Washjoy
+        - generic [ref=e8]: 附近好好洗
+    - button "开启定位后推荐附近门店" [ref=e9] [cursor=pointer]
+    - link "账号" [ref=e13] [cursor=pointer]:
+      - /url: /washjoy/account
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: 此刻附近
+      - heading "想洗个舒服澡？" [level=1] [ref=e21]
+      - paragraph [ref=e22]: 30 分钟内，找到适合你的那一间
+    - searchbox "搜索附近门店" [ref=e27]
+    - generic [ref=e28]:
+      - generic [ref=e29]: 南京市
+      - button "筛选 · 30分钟" [ref=e33] [cursor=pointer]
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - button "全部" [ref=e39] [cursor=pointer]
+        - button "洗浴中心" [ref=e40] [cursor=pointer]
+        - button "大众澡堂" [ref=e41] [cursor=pointer]
+        - button "足疗会所" [ref=e42] [cursor=pointer]
+        - button "街边店" [ref=e43] [cursor=pointer]
+        - button "私汤" [ref=e44] [cursor=pointer]
+      - generic [ref=e45]:
+        - button "公交地铁" [ref=e46] [cursor=pointer]
+        - button "骑行" [ref=e54] [cursor=pointer]
+        - button "驾车" [ref=e60] [cursor=pointer]
+    - region "门店位置地图" [ref=e64]:
+      - button "重新定位" [ref=e71] [cursor=pointer]
+      - generic [ref=e75]: 南京市 · 已加载 0 家
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - heading "附近推荐" [level=2] [ref=e79]
+        - text: 0 / 0 家已加载
+      - button "站长推荐" [ref=e80] [cursor=pointer]
+    - generic [ref=e83]: 公交地铁 · 预计 30 分钟 内
+    - generic [ref=e84]: 正在加载附近门店…

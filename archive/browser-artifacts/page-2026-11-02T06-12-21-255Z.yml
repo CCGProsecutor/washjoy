@@ -1,0 +1,49 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - link "W Washjoy 附近好好洗" [ref=f1e5] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=f1e6]: W
+      - generic [ref=f1e7]:
+        - text: Washjoy
+        - generic [ref=f1e8]: 附近好好洗
+    - button "获取当前位置" [ref=f1e9] [cursor=pointer]:
+      - generic [ref=f1e11]: 正在获取当前位置…
+    - button "我的" [ref=f1e14] [cursor=pointer]
+  - main [ref=f1e18]:
+    - generic [ref=f1e19]:
+      - generic [ref=f1e20]:
+        - generic [ref=f1e21]: 此刻附近
+        - heading "想洗个舒服澡？" [level=1] [ref=f1e23]
+        - paragraph [ref=f1e24]: 30 分钟内，找到适合你的那一间
+      - generic [ref=f1e25]: 即刻出发
+    - generic [ref=f1e27]:
+      - textbox "搜店名、区域或想要的体验" [ref=f1e31]
+      - button "搜附近" [ref=f1e32] [cursor=pointer]
+    - generic [ref=f1e33]:
+      - combobox "选择城市" [ref=f1e38] [cursor=pointer]:
+        - option "南京市" [selected]
+        - option "扬州市"
+        - option "镇江市"
+      - button "筛选 全部 · 公交地铁 · 30 分钟" [ref=f1e39] [cursor=pointer]:
+        - generic [ref=f1e40]: 筛选
+        - generic [ref=f1e42]: 全部 · 公交地铁 · 30 分钟
+    - generic [ref=f1e45]:
+      - generic [ref=f1e46]:
+        - generic "附近门店地图预览" [ref=f1e47]: 附近门店预览 · 可点击门店查看详情
+        - generic [ref=f1e58]:
+          - generic [ref=f1e59]: 高德地图 · 南京市
+          - generic [ref=f1e61]:
+            - button "回到当前位置" [ref=f1e62] [cursor=pointer]
+            - button "放大地图" [ref=f1e66] [cursor=pointer]
+            - button "缩小地图" [ref=f1e68] [cursor=pointer]
+        - generic [ref=f1e70]: 门店位置 当前位置
+        - generic [ref=f1e74]: 门店信息来自高德地图
+      - generic [ref=f1e75]:
+        - generic [ref=f1e76]:
+          - generic [ref=f1e77]:
+            - heading "附近推荐" [level=2] [ref=f1e78]
+            - text: 正在从高德加载
+          - button "距离较近" [ref=f1e79] [cursor=pointer]
+        - generic [ref=f1e83]: 步行 + 公交 / 地铁 · 预计 20 至 35 分钟
+        - generic [ref=f1e84]: 正在加载 南京市 的高德门店信息…
+        - paragraph [ref=f1e86]: 门店名称、地址、图片与公开评价来自高德地图；预计时间为基于距离的估算，不代表实时路线。
