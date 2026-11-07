@@ -53,7 +53,7 @@
 
 - current：`/opt/apps/washjoy-frontend/releases/b-routing-safe-20261107-235255`；回退基线：`b-detail-20261107-2017`。
 - SSR SHA256：`a45f024db2afa9eb57fc3a43dc0a8f507898ce004948f0dfed48a4a22b32e6c9`；发布文件清单在 release 的 `SHA256SUMS`；备份 `/root/backups/washjoy-frontend/b-routing-safe-20261107-235255`。运行依赖独立随版本保存。误含动效候选的 `b-routing-20261107-230757` 仅作隔离产物，不是 current。
-- 代码修复账户按钮固有宽度覆盖，并让路线继续查找只计算新增候选；当前批次候选数与实际符合门店数分开显示。
+- 代码修复账户按钮固有宽度覆盖、默认出行方式改为驾车，并让路线继续查找只计算新增候选；当前批次候选数与实际符合门店数分开显示。
 - 独立生产构建及 `3795` 本机四入口/API smoke 通过；`390px` 首页专项 5/5、账户提交专项 2/2 通过；typecheck、lint、23 项单测通过。
 - 原子切换后 `washjoy-next.service` active；公网首页、账户页、health 均 HTTP 200。发布后约 124.8 秒、30 轮首页/health：0 错误、0 非预期重启，组合 P95 208.4ms，最大 225.3ms。
 - 本次未发布动效候选，因其 CPU4x 帧率性能门禁仍未通过；未改 Rust/API/认证权限/数据库。

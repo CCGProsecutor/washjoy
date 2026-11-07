@@ -12,7 +12,7 @@ import { PAGE_SIZE, useNearby } from '../lib/use-nearby'
 export default function Home() {
   const [shell, setShell] = useState<HTMLElement | null>(null)
   const [selected, setSelected] = useState<Place | null>(null)
-  const [travelMode, setTravelMode] = useState<TravelMode>('transit')
+  const [travelMode, setTravelMode] = useState<TravelMode>('car')
   const nearby = useNearby(travelMode)
   const [mapError, setMapError] = useState(false)
   const [mapMode, setMapMode] = useState(false)
